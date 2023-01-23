@@ -38,3 +38,17 @@ btnDarkMode.addEventListener("click", function (e) {
     localStorage.setItem("darkMode", "light");
   }
 });
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+
+  spaceBetween: 50,
+
+  slidesPerView: 'auto',
+
+  navigation: {
+    nextEl: ".feedbacks-button-next",
+    prevEl: ".feedbacks-button-prev",
+  },
+});
