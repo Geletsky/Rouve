@@ -42,15 +42,15 @@
 					</div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Портфолио</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-							<li class="menu__item"><a href="#" class="menu__link menu__link-mobile">Контакты</a></li>
+							<li class="menu__item"><a href="#works" class="menu__link section-link">Портфолио</a></li>
+							<li class="menu__item"><a href="#services" class="menu__link section-link">Услуги</a></li>
+							<li class="menu__item"><a href="#about" class="menu__link section-link">О нас</a></li>
+							<li class="menu__item"><a href="#contact" class="menu__link menu__link-mobile">Контакты</a></li>
 						</ul>
 					</nav>
 					<div class="menu__footer">
-						<a href="#" class="menu__change">RU</a>
-						<a href="#" class="menu__dark-mode dark-mode-btn">
+						<a href="#" onclick="return false" class="menu__change">RU</a>
+						<a href="#" onclick="return false" class="menu__dark-mode dark-mode-btn">
 							<iconify-icon icon="material-symbols:dark-mode-outline-rounded"></iconify-icon>
 						</a>
 					</div>
@@ -59,31 +59,30 @@
 		</header>
 		<main class="main">
 			<section class="digital">
+				<a href="#works" class="digital__scroll section-link">
+					<svg width="17" height="48" viewBox="0 0 17 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="27.5" height="5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 6 0.25)"
+							fill="#231B19" />
+						<path
+							d="M16.625 27.75L0.375 27.75C0.377319 31.5278 1.10235 35.2625 2.50257 38.7092C3.90279 42.1559 5.94658 45.2368 8.49999 47.75C11.058 45.2409 13.1049 42.1608 14.5055 38.7132C15.9061 35.2656 16.6285 31.5289 16.625 27.75Z"
+							fill="#231B19" />
+					</svg>
+				</a>
 				<div class="digital__container">
 					<div class="digital__wrapper">
 						<div class="digital__media">
-							<a href="#" class="digital__button button">Оставить<br>заявку</a>
+							<a href="#connection" class="digital__button button section-link">Оставить<br>заявку</a>
 						</div>
 						<div class="digital__content">
 							<h1 class="digital__title">Digital студия<br>для вашего бизнеса</h1>
 							<div class="digital__subtitle">Мы разрабатываем продающие сайты, корпоративные порталы,
 								интернет-магазины, приложения, создаем цифровой контент для
 								продвижения бизнеса наших клиентов</div>
-							<div class="digital__scroll">
-								<svg width="25" height="50" viewBox="0 0 25 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect width="27.5" height="5" transform="matrix(-4.37114e-08 1 1 4.37114e-08 10 1.24982)"
-										fill="#231B19" />
-									<path
-										d="M20.625 28.7499L4.375 28.7499C4.37732 32.5278 5.10235 36.2624 6.50257 39.7091C7.90279 43.1558 9.94658 46.2367 12.5 48.7499C15.058 46.2409 17.1049 43.1608 18.5055 39.7132C19.9061 36.2655 20.6285 32.5288 20.625 28.7499Z"
-										fill="#231B19" />
-								</svg>
-								<div class="digital__scroll-text">Скролльте вниз</div>
-							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="works">
+			<section class="works" id="works">
 				<div class="works__container">
 					<div class="works__header section-header">
 						<h3 class="works__title title">Наши работы</h3>
@@ -95,29 +94,30 @@
 							<div class="works__items">
 								<div class="works__item item-left">
 									<div class="works__card card-works">
-										<div class="card-works__photo">
+										<a href="#" class="card-works__photo">
 											<img src="img/index/works/paintworld.png" alt="Изображение">
-										</div>
-										<div class="card-works__title">«PaintWorld» — онлайн-магазин художественных картин</div>
+										</a>
+										<a href="#" class="card-works__title">«PaintWorld» — онлайн-магазин художественных
+											картин</a>
 									</div>
 									<div class="works__card card-works card-works-horizontal-half">
-										<div class="card-works__photo">
+										<a href="#" class="card-works__photo">
 											<img src="img/index/works/avrora.png" alt="Изображение">
-										</div>
-										<div class="card-works__title">ЖК «Аврора» — корпоративный сайт</div>
+										</a>
+										<a href="#" class="card-works__title">ЖК «Аврора» — корпоративный сайт</a>
 									</div>
 									<div class="works__card card-works card-works-verticals-left">
 										<div class="card-works__wrapper">
-											<div class="card-works__photo">
+											<a href="#" class="card-works__photo">
 												<img src="img/index/works/gloria.png" alt="Изображение">
-											</div>
-											<div class="card-works__title">«Gloria» — сайт-портфолио для sound-агенства</div>
+											</a>
+											<a href="#" class="card-works__title">«Gloria» — сайт-портфолио для sound-агенства</a>
 										</div>
 										<div class="card-works__wrapper">
-											<div class="card-works__photo">
+											<a href="#" class="card-works__photo">
 												<img src="img/index/works/history.png" alt="Изображение">
-											</div>
-											<div class="card-works__title">«History» — промо сайт для выставки искусств</div>
+											</a>
+											<a href="#" class="card-works__title">«History» — промо сайт для выставки искусств</a>
 										</div>
 									</div>
 								</div>
@@ -125,16 +125,16 @@
 							<div class="works__items">
 								<div class="works__item item-right">
 									<div class="works__card card-works card-works-verticals-right">
-										<div class="card-works__photo">
+										<a href="#" class="card-works__photo">
 											<img src="img/index/works/arena.png" alt="Изображение">
-										</div>
-										<div class="card-works__title">«Arena» — landing page для VR студии</div>
+										</a>
+										<a href="#" class="card-works__title">«Arena» — landing page для VR студии</a>
 									</div>
 									<div class="works__card card-works card-works-verticals-right">
-										<div class="card-works__photo">
+										<a href="#" class="card-works__photo">
 											<img src="img/index/works/v.png" alt="Изображение">
-										</div>
-										<div class="card-works__title">v</div>
+										</a>
+										<a href="#" class="card-works__title">v</a>
 									</div>
 
 								</div>
@@ -146,7 +146,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="services">
+			<section class="services" id="services">
 				<div class="services__container">
 					<div class="services__media">
 						<a href="#" class="services__button button">Наши<br>услуги</a>
@@ -222,7 +222,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="about">
+			<section class="about" id="about">
 				<div class="about__container">
 					<div class="about__media">
 						<a href="#" class="about__button button">Кто мы<br>такие?</a>
@@ -236,27 +236,27 @@
 						</div>
 						<div class="about__people people-about">
 							<div class="people-about__items">
-								<div class="people-about__item">
+								<a href="#" class="people-about__item">
 									<img src="img/index/about/01.png" alt="Изображение">
 									<div class="people-about__wrapper">
 										<div class="people-about__post">UI / UX Дизайнер</div>
 										<div class="people-about__name">Аркадий Сидоров</div>
 									</div>
-								</div>
-								<div class="people-about__item">
+								</a>
+								<a href="#" class="people-about__item">
 									<img src="img/index/about/02.png" alt="Изображение">
 									<div class="people-about__wrapper">
 										<div class="people-about__post">Front-end разработчик</div>
 										<div class="people-about__name">Петр Мельников</div>
 									</div>
-								</div>
-								<div class="people-about__item">
+								</a>
+								<a href="#" class="people-about__item">
 									<img src="img/index/about/03.png" alt="Изображение">
 									<div class="people-about__wrapper">
 										<div class="people-about__post">Back-end разработчик</div>
 										<div class="people-about__name">Иван Иванов</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -403,8 +403,8 @@
 							</div>
 							<div class="feedbacks__buttons">
 								<div class="feedbacks__buttons-wrapper">
-									<div class="feedbacks-button-prev ">
-										<svg width="84" height="36" viewBox="0 0 84 36" fill="none"
+									<div class="feedbacks-button-prev">
+										<svg width="85" height="37" viewBox="0 0 84 36" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
 											<g opacity="1">
 												<rect width="40.59" height="7.38" transform="matrix(-1 0 0 1 77.0549 14.3101)"
@@ -658,7 +658,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="connection">
+			<section class="connection" id="connection">
 				<div class="connection__container">
 					<div class="connection__media">
 						<img src="img/index//connection/01.png" alt="Изображение">
@@ -669,19 +669,30 @@
 							<div class="connection__subtitle subtitle">Заполните форму и наша команда свяжется с Вами в
 								ближайшее время</div>
 						</div>
-						<form action="index.html" class="connection__form">
+						<form action="#" class="connection__form">
 							<div class="connection__form-wrapper">
-								<input type="text" placeholder="Ваше имя" required class="connection__input-name input">
-								<input type="tel" placeholder="Номер телефона" class="connection__input-tel input">
-								<input type="email" placeholder="Электронная почта" required
-									class="connection__input-email input">
-								<input type="text" placeholder="Комменатрий" class="connection__input-comment input">
+								<div class="connection__form-line">
+									<input required id="i-1" type="text" class="connection__form-input" name="name">
+									<label for="i-1" class="connection__label">Ваше имя<span>*</span></label>
+								</div>
+								<div class="connection__form-line">
+									<input id="i-2" type="tel" class="connection__form-input" name="phone">
+									<label for="i-2" class="connection__label">Номер телефона</label>
+								</div>
+								<div class="connection__form-line">
+									<input required id="i-3" type="email" class="connection__form-input" name="email">
+									<label for="i-3" class="connection__label">Электронная почта<span>*</span></label>
+								</div>
+								<div class="connection__form-line">
+									<input id="i-4" type="text" class="connection__form-input" name="message">
+									<label for="i-4" class="connection__label">Комменатрий</label>
+								</div>
 								<div class="connection__privacy">
-									<input type="checkbox" name="privacy" id="privacy" required>
-									<label for="privacy">Я согласен на обработку <a href="#">персональных данных</a></label>
+									<input id="i-5" type="checkbox" name="privacy">
+									<label for="i-5">Я согласен на обработку <a href="#"> персональных данных</a></label>
 								</div>
 							</div>
-							<input type="submit" value="Отправить" class="connection__button button">
+							<button type="submit" class="connection__button button">Отправить</button>
 						</form>
 					</div>
 				</div>
