@@ -1,3 +1,20 @@
+:root {
+	/* LIGHT MODE */
+	--menu-burger-bg: #0d0a0a;
+	--menu-link: #fff;
+}
+
+.dark {
+	--menu-burger-bg: #fff;
+	--menu-link: #231B19;
+
+	transition: all 1s ease 0s;
+	-webkit-transition: all 1s ease 0s;
+	-moz-transition: all 1s ease 0s;
+	-ms-transition: all 1s ease 0s;
+	-o-transition: all 1s ease 0s;
+}
+
 /*MEDIA*/
 @media (max-height: 900px) {
 	.digital {
@@ -8,13 +25,8 @@
 
 @media (max-width: 1700px) {
 	.digital {
-		&__title {
-			font-size: 85px;
-		}
-
-		&__subtitle {
-			font-size: 32px;
-			max-width: 950px;
+		&__scroll {
+			left: 29%;
 		}
 	}
 
@@ -23,7 +35,6 @@
 			width: 120%;
 		}
 	}
-
 }
 
 @media (max-width: 1550px) {
@@ -89,16 +100,6 @@
 @media (max-width: 1360px) {
 	.digital {
 		padding: 200px 0px 100px 0px;
-
-		&__title {
-			font-size: 70px;
-			margin: 0px 0px 35px 0px;
-		}
-
-		&__subtitle {
-			font-size: 24px;
-			max-width: 755px;
-		}
 	}
 
 	.connection {
@@ -125,17 +126,7 @@
 	.digital {
 
 		&__title {
-			font-size: 60px;
-			margin: 0px 0px 35px 0px;
-		}
-
-		&__subtitle {
-			font-size: 18px;
-			max-width: 630px;
-		}
-
-		&__scroll svg {
-			margin: 0px 15px 0px 0px;
+			font-size: 75px;
 		}
 	}
 
@@ -164,7 +155,17 @@
 }
 
 /*PC*/
-@media (max-width: 1087px) {}
+@media (max-width: 1087px) {
+	.digital {
+		&__title {
+			font-size: 68px;
+		}
+
+		&__subtitle {
+			font-size: 21px;
+		}
+	}
+}
 
 /* ===================== */
 
@@ -191,7 +192,12 @@
 			margin: 0px 25px 0px 0px;
 		}
 
+		&__link {
+			font-size: 22px;
+		}
+
 		&__change {
+			font-size: 22px;
 			margin: 0px 20px 0px 0px;
 		}
 	}
@@ -207,7 +213,7 @@
 		}
 
 		&__subtitle {
-			font-size: 26px;
+			font-size: 24px;
 			margin: 0px 0px 0px 0px;
 		}
 
@@ -437,12 +443,11 @@
 	.digital {
 
 		&__title {
-			font-size: 48px;
+			font-size: 50px;
 		}
 
 		&__subtitle {
 			font-size: 20px;
-			max-width: 520px;
 		}
 	}
 }
@@ -526,7 +531,7 @@
 			width: 320px;
 			height: 100%;
 			overflow: auto;
-			background: #0d0a0a;
+			background: var(--menu-burger-bg);
 
 			transition: all 0.3s ease 0s;
 			-webkit-transition: all 0.3s ease 0s;
@@ -558,7 +563,7 @@
 			font-weight: 700;
 			font-size: 28px;
 
-			color: #FFFCFC;
+			color: var(--menu-link);
 		}
 
 		&__link-mobile {
@@ -569,19 +574,12 @@
 			display: flex;
 
 			& .menu__change {
-				color: #FFFCFC;
+				color: var(--menu-link);
 				position: relative;
 				z-index: 10;
-
-				transition: color .3s ease 0s;
-				-webkit-transition: color .3s ease 0s;
-				-moz-transition: color .3s ease 0s;
-				-ms-transition: color .3s ease 0s;
-				-o-transition: color .3s ease 0s;
 			}
 
 			& .menu__dark-mode {
-				color: #FFFCFC;
 				position: relative;
 				z-index: 10;
 
@@ -590,12 +588,15 @@
 				-moz-transition: color .3s ease 0s;
 				-ms-transition: color .3s ease 0s;
 				-o-transition: color .3s ease 0s;
+
+				& svg path {
+					fill: var(--menu-link);
+				}
 			}
 		}
 	}
 
 	.digital {
-		padding: 190px 0px 50px 0px;
 
 		&__container::after {
 			height: 60%;
@@ -607,12 +608,12 @@
 		}
 
 		&__title {
-			font-size: calc(26px + (84 + 84 * 0.7) * ((100vw - 320px) / 1680));
+			font-size: calc(32px + (24 + 24 * 0.7) * ((100vw - 320px) / 1680));
 		}
 
 		&__subtitle {
-			margin: 0px 25px 0px 0px;
-			font-size: calc(20px + (16 + 16 * 0.7) * ((100vw - 320px) / 1680));
+			margin: 0px 30px 0px 0px;
+			font-size: calc(20px + (4 + 4 * 0.7) * ((100vw - 320px) / 1680));
 			max-width: 620px;
 		}
 
@@ -779,6 +780,15 @@
 
 /*MOBILE SMALL*/
 @media (max-width: 479.98px) {
+
+	.digital {
+		padding: 174px 0px 0px 0px;
+
+		&__title {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+
 	.header {
 		&__logo svg {
 			margin: 0px 0px 0px 5px;
