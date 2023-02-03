@@ -60,13 +60,15 @@ const inputsConnection = document.querySelectorAll(".connection__form-input");
 const checkboxConnection = document.querySelector("input[type='checkbox']");
 
 // Ставим событие на отправку формы
-formConnection.addEventListener("submit", function (event) {
-  // Проверяем если пользователь поставил флажок на checkbox
-  if (!checkboxConnection.checked) {
-    event.preventDefault();
-    alert("Пожалуйста, установите флажок перед отправкой формы.");
-  }
-});
+if (formConnection) {
+  formConnection.addEventListener("submit", function (event) {
+    // Проверяем если пользователь поставил флажок на checkbox
+    if (!checkboxConnection.checked) {
+      event.preventDefault();
+      alert("Пожалуйста, установите флажок перед отправкой формы.");
+    }
+  });
+}
 
 // Проходимся по каждому input
 for (let i = 0; i < inputsConnection.length; i++) {
@@ -118,3 +120,31 @@ window.onscroll = function showHeader() {
     header.classList.remove("_fixed");
   }
 };
+
+const tabsLinkTickets = document.querySelectorAll(".tabs-portfolio__link");
+const tabsItemsTickets = document.querySelectorAll(".tabs-portfolio__block");
+
+tabsLinkTickets.forEach(onTabClickTickets);
+
+function onTabClickTickets(item) {
+  item.addEventListener("click", function () {
+    let currentLink = item;
+    let linkId = currentLink.getAttribute("href");
+    let currentBlock = document.querySelector(linkId);
+
+    if (!currentLink.classList.contains("active")) {
+      tabsLinkTickets.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      tabsItemsTickets.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      currentLink.classList.add("active");
+      currentBlock.classList.add("active");
+    }
+  });
+}
+
+document.querySelector(".tabs-portfolio__link").click();
