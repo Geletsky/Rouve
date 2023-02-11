@@ -550,7 +550,7 @@ body._lock {
 
 /*ABOUT*/
 .about {
-	padding: 144px 0px 0px 0px;
+	padding: 144px 0px 144px 0px;
 	background: var(--page-bg);
 
 	&__container {
@@ -578,6 +578,14 @@ body._lock {
 	&__subtitle {}
 
 	&__people {}
+}
+
+.button-about-position {
+	margin: 54px 0px 0px 0px;
+}
+
+.about-bg {
+	background: var(--page-gray);
 }
 
 .people-about {
@@ -629,7 +637,6 @@ body._lock {
 
 /*FEEDBACKS*/
 .feedbacks {
-	padding: 144px 0px 0px 0px;
 
 	&__container {}
 
