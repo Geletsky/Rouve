@@ -38,31 +38,6 @@
 }
 
 @media (max-width: 1550px) {
-	.services {
-		padding: 160px 0px 160px 0px;
-
-		&__media {
-			margin: 0px 42px 0px 0px;
-		}
-	}
-
-	.name-services {
-		margin: 78px 0px 0px 0px;
-
-		&__items {
-			grid-template: repeat(2, 1fr);
-			gap: 40px;
-		}
-
-		&__item {
-			grid-column: 2 span;
-		}
-
-		&__title {
-			margin: 20px 0px 0px 0px;
-		}
-	}
-
 	.connection {
 		&__form-input {
 			width: 100%;
@@ -99,7 +74,40 @@
 
 @media (max-width: 1360px) {
 	.digital {
-		padding: 200px 0px 100px 0px;
+		padding: 140px 0px 100px 0px;
+
+		&__button {
+			margin: 48px 48px 0px 40px;
+		}
+	}
+
+	.services {
+		padding: 104px 0px 80px 0px;
+
+		&__media {
+			margin: 0px 42px 0px 0px;
+		}
+
+		&__button {
+			margin: 15px 0px 0px 0px;
+		}
+	}
+
+	.name-services {
+		margin: 60px 0px 0px 0px;
+
+		&__items {
+			grid-template: repeat(2, 1fr);
+			gap: 40px;
+		}
+
+		&__item {
+			grid-column: 2 span;
+		}
+
+		&__subtitle {
+			margin: 20px 0px 75px 0px;
+		}
 	}
 
 	.connection {
@@ -125,6 +133,10 @@
 @media (max-width: 1150px) {
 	.digital {
 
+		&__button {
+			margin: 48px 0px 0px 0px;
+		}
+
 		&__title {
 			font-size: 75px;
 		}
@@ -134,22 +146,6 @@
 
 		&__form-input {
 			width: 90%;
-		}
-	}
-
-	.footer {
-		&__social {
-			&:not(:last-child) {
-				margin: 0px 20px 0px 0px;
-			}
-
-			&:nth-child(3) {
-				margin: 0px 0px 0px 0px;
-			}
-
-			&:nth-child(4) {
-				margin: 0px 0px 0px 0px;
-			}
 		}
 	}
 }
@@ -163,6 +159,18 @@
 
 		&__subtitle {
 			font-size: 21px;
+		}
+	}
+
+	.footer {
+		&__social {
+			&:not(:last-child) {
+				margin: 0px 20px 0px 0px;
+			}
+
+			&:nth-child(3) {
+				margin: 0px 0px 0px 0px;
+			}
 		}
 	}
 }
@@ -203,6 +211,7 @@
 	}
 
 	.digital {
+		padding: 200px 0px 112px 0px;
 
 		&__container::after {
 			height: 100%;
@@ -213,7 +222,7 @@
 		}
 
 		&__subtitle {
-			font-size: 24px;
+			font-size: 20px;
 			margin: 0px 30px 0px 0px;
 		}
 
@@ -229,7 +238,7 @@
 	}
 
 	.works {
-		padding: 120px 0px 0px 0px;
+		padding: 104px 0px 0px 0px;
 
 		&__gallery {
 			margin: 60px 0px 0px 0px;
@@ -251,7 +260,7 @@
 		}
 
 		&__button {
-			margin: -70px 0px 0px auto;
+			margin: -80px 80px 0px auto;
 		}
 	}
 
@@ -306,7 +315,7 @@
 	}
 
 	.about {
-		padding: 120px 0px 0px 0px;
+		padding: 104px 0px 0px 0px;
 
 		&__media {
 			margin: 0px 0px 0px 0px;
@@ -349,7 +358,7 @@
 	}
 
 	.feedbacks {
-		padding: 217px 0px 0px 0px;
+		padding: 104px 0px 0px 0px;
 
 		&__slider {
 			padding: 176px 0px 0px 0px;
@@ -372,7 +381,7 @@
 	}
 
 	.connection {
-		padding: 120px 0px 0px 0px;
+		padding: 104px 0px 80px 0px;
 
 		&__media {
 			display: none;
@@ -408,8 +417,7 @@
 	}
 
 	.footer {
-		margin: 26px 0px 0px 0px;
-		padding: 80px 0px;
+		padding: 90px 0px;
 
 		&__container {
 			flex-direction: column;
@@ -437,7 +445,7 @@
 	}
 
 	.portfolio {
-		padding: 60px 0px 0px 0px;
+		padding: 30px 0px 20px 0px;
 
 		&__items:first-child {
 			margin: 0px 0px 0px 0px;
@@ -489,11 +497,7 @@
 	.digital {
 
 		&__title {
-			font-size: 50px;
-		}
-
-		&__subtitle {
-			font-size: 20px;
+			font-size: 52px;
 		}
 	}
 }
@@ -530,7 +534,11 @@
 				width: 100%;
 				height: 4px;
 				background: #bf021f;
-
+				border-radius: 50px;
+				-webkit-border-radius: 50px;
+				-moz-border-radius: 50px;
+				-ms-border-radius: 50px;
+				-o-border-radius: 50px;
 				transition: all 0.3s ease 0s;
 				-webkit-transition: all 0.3s ease 0s;
 				-moz-transition: all 0.3s ease 0s;
@@ -603,8 +611,7 @@
 
 		&__link {
 			font-weight: 700;
-			font-size: 28px;
-
+			font-size: 32px;
 			color: var(--menu-link);
 		}
 
@@ -651,23 +658,23 @@
 		}
 
 		&__title {
-			font-size: calc(32px + (24 + 24 * 0.7) * ((100vw - 320px) / 1680));
+			font-size: calc(28px + (28 + 28 * 0.7) * ((100vw - 320px) / 1680));
 		}
 
 		&__subtitle {
 			margin: 0px 30px 0px 0px;
-			font-size: calc(20px + (4 + 4 * 0.7) * ((100vw - 320px) / 1680));
+			font-size: 20px;
 		}
 
 		&__button {
 			position: relative;
 			z-index: 100;
-			margin: 30px 0px 0px auto;
+			margin: 80px 100px 0px auto;
 		}
 	}
 
 	.subtitle-max {
-		max-width: 620px;
+		max-width: 680px;
 	}
 
 	.section-header {
@@ -675,14 +682,13 @@
 	}
 
 	.works {
-		padding: 80px 0px 0px 0px;
 
 		&__gallery {
 			margin: 40px 0px 0px 0px;
 		}
 
 		&__button {
-			margin: -20px 0px 0px auto;
+			margin: -70px 30px 0px auto;
 		}
 	}
 
@@ -692,12 +698,8 @@
 		}
 	}
 
-	.title {
-		margin: 0px 0px 30px 0px;
-	}
-
 	.services {
-		padding: 160px 0px 120px 0px;
+		padding: 74px 0px 50px 0px;
 
 		&__container {
 			flex-direction: column-reverse;
@@ -728,7 +730,7 @@
 	}
 
 	.about {
-		padding: 100px 0px 0px 0px;
+		padding: 80px 0px 0px 0px;
 
 		&__container {
 			flex-direction: column-reverse;
@@ -755,7 +757,7 @@
 		}
 
 		&__buttons {
-			top: 18%;
+			top: 15%;
 		}
 
 		&__item {
@@ -778,7 +780,7 @@
 	}
 
 	.connection {
-		padding: 100px 0px 0px 0px;
+		padding: 74px 0px 50px 0px;
 
 		&__form-input {
 			width: 90%;
@@ -786,7 +788,7 @@
 	}
 
 	.footer {
-		padding: 60px 0px;
+		padding: 70px 0px;
 
 		&__logo img {
 			max-width: 300px;
@@ -794,7 +796,7 @@
 	}
 
 	.portfolio {
-		padding: 30px 0px 0px 0px;
+		padding: 30px 0px 15px 0px;
 	}
 
 	.tabs-portfolio {
@@ -826,6 +828,12 @@
 /* ===================== */
 
 @media(max-width: 650px) {
+	.digital {
+		&__button {
+			margin: 80px 40px 0px auto;
+		}
+	}
+
 	.connection {
 		&__title {
 			margin: 0px 15px 20px 0px;
@@ -907,14 +915,18 @@
 @media (max-width: 479.98px) {
 
 	.digital {
-		padding: 174px 0px 80px 0px;
+		padding: 180px 0px 50px 0px;
 
 		&__title {
-			margin: 0px 0px 20px 0px;
+			margin: 0px 20px 20px 0px;
 		}
 
 		&__subtitle {
 			margin: 0px 20px 0px 0px;
+		}
+
+		&__button {
+			margin: 50px 15px 0px auto;
 		}
 	}
 
@@ -940,14 +952,14 @@
 	}
 
 	.works {
-		padding: 60px 0px 0px 0px;
+		padding: 78px 0px 0px 0px;
 
 		&__gallery {
 			margin: 40px 0px 0px 0px;
 		}
 
 		&__button {
-			margin: 0px 0px 0px auto;
+			margin: 50px 0px 0px auto;
 		}
 	}
 
@@ -981,11 +993,7 @@
 	}
 
 	.title {
-		margin: 0px 0px 20px 0px;
-	}
-
-	.services {
-		padding: 100px 0px 100px 0px;
+		margin: 0px 0px 30px 0px;
 	}
 
 	.name-services {
@@ -1016,6 +1024,8 @@
 	}
 
 	.about {
+		padding: 50px 0px 0px 0px;
+
 		&__button {
 			margin: 50px 0px 0px auto;
 		}
@@ -1051,7 +1061,7 @@
 	}
 
 	.feedbacks {
-		padding: 80px 0px 0px 0px;
+		padding: 74px 0px 0px 0px;
 
 		&__content {
 			width: 100vw;
@@ -1073,7 +1083,7 @@
 
 	.footer {
 		&__logo img {
-			max-width: 280px;
+			max-width: 250px;
 		}
 
 		&__content {
@@ -1119,5 +1129,13 @@
 		&__icon {
 			margin: 0px 0px 0px 25px;
 		}
+	}
+
+	.digital {
+		padding: 150px 0px 50px 0px;
+	}
+
+	.title {
+		margin: 0px 0px 20px 0px;
 	}
 }

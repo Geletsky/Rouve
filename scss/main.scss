@@ -228,7 +228,12 @@ body._lock {
 			width: 4px;
 			height: 100%;
 			background: #BF021F;
-		}
+			border-radius: 20px;
+			-webkit-border-radius: 20px;
+			-moz-border-radius: 20px;
+			-ms-border-radius: 20px;
+			-o-border-radius: 20px;
+}
 	}
 
 	&__wrapper {
@@ -242,7 +247,7 @@ body._lock {
 	}
 
 	&__button {
-		margin: 0px 45px 40px 0px;
+		margin: 48px 48px 0px 90px;
 	}
 
 	&__content {
@@ -289,9 +294,9 @@ body._lock {
 	text-align: center;
 	width: 230px;
 	height: 230px;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 22px;
-	line-height: 140%;
+	line-height: 118.181818%; /* 26/22 */
 	color: #FFFFFF;
 	background: #BF021F;
 	border-radius: 50%;
@@ -317,28 +322,33 @@ body._lock {
 		width: 4px;
 		height: 100%;
 		background: #BF021F;
-	}
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-ms-border-radius: 20px;
+		-o-border-radius: 20px;
+}
 }
 
 .title {
 	margin: 0px 0px 40px 0px;
 	font-weight: 700;
-	@include adaptiv-font(72, 36);
+	@include adaptiv-font(48, 32);
 	line-height: 120%;
 	color: var(--page-text);
 }
 
 .subtitle {
 	margin: 0px 30px 0px 0px;
-	@include adaptiv-font(36, 16);
+	@include adaptiv-font(22, 20);
 	line-height: 140%;
 	color: var(--page-text);
-	max-width: 860px;
+	max-width: 650px;
 }
 
 .works {
 	background: var(--page-gray);
-	padding: 174px 0px 0px 0px;
+	padding: 144px 0px 0px 0px;
 
 	&__container {}
 
@@ -351,7 +361,7 @@ body._lock {
 	&__subtitle {}
 
 	&__gallery {
-		margin: 132px 0px 0px 0px;
+		margin: 80px 0px 0px 0px;
 		position: relative;
 	}
 
@@ -377,7 +387,7 @@ body._lock {
 	&__card {}
 
 	&__button {
-		margin: 0 auto;
+		margin: 60px auto 0px;
 	}
 }
 
@@ -394,10 +404,10 @@ body._lock {
 
 	&__title {
 		display: block;
-		margin: 30px 0px 0px 0px;
+		margin: 20px 0px 0px 0px;
 		max-width: 640px;
 		font-weight: 500;
-		@include adaptiv-font(36, 24);
+		@include adaptiv-font(24, 20);
 		line-height: 120%;
 		color: var(--page-text);
 	}
@@ -426,7 +436,7 @@ body._lock {
 
 /*SERVICES*/
 .services {
-	padding: 230px 0px 200px 0px;
+	padding: 144px 0px 120px 0px;
 	background: var(--page-gray);
 
 	&__container {
@@ -440,7 +450,7 @@ body._lock {
 	}
 
 	&__button {
-		margin: 70px 0px 0px 0px;
+		margin: 50px 0px 0px 90px;
 	}
 
 	&__content {
@@ -457,7 +467,7 @@ body._lock {
 }
 
 .name-services {
-	margin: 100px 0px 0px 0px;
+	margin: 80px 0px 0px 0px;
 
 	&__content {}
 
@@ -468,7 +478,7 @@ body._lock {
 	}
 
 	&__item {
-		padding: 40px 30px 50px 30px;
+		padding: 40px 30px;
 		background: var(--services-item);
 		border-radius: 8px;
 		position: relative;
@@ -484,14 +494,14 @@ body._lock {
 
 	&__title {
 		font-weight: 600;
-		@include adaptiv-font(46, 26);
+		font-size: 24px;
 		line-height: 120%;
 		color: var(--page-text);
 	}
 
 	&__subtitle {
-		margin: 25px 0px 80px 0px;
-		@include adaptiv-font(24, 16);
+		margin: 20px 0px 115px 0px;
+		font-size: 20px;
 		line-height: 140%;
 		color: var(--page-text);
 	}
@@ -509,7 +519,7 @@ body._lock {
 
 	&__price {
 		font-weight: 600;
-		@include adaptiv-font(44, 36);
+		@include adaptiv-font(32, 24);
 		line-height: 120%;
 		color: var(--price-text);
 	}
@@ -530,7 +540,7 @@ body._lock {
 
 	&__more {
 		font-weight: 500;
-		@include adaptiv-font(24, 20);
+		font-size: 20px;
 		line-height: 140%;
 		color: var(--page-text);
 	}
@@ -540,7 +550,7 @@ body._lock {
 
 /*ABOUT*/
 .about {
-	padding: 174px 0px 0px 0px;
+	padding: 144px 0px 0px 0px;
 	background: var(--page-bg);
 
 	&__container {
@@ -554,7 +564,7 @@ body._lock {
 	}
 
 	&__button {
-		margin: 171px 0px 0px 0px;
+		margin: 240px 0px 0px 97px;
 	}
 
 	&__content {
@@ -571,7 +581,7 @@ body._lock {
 }
 
 .people-about {
-	margin: 100px 0px 0px 0px;
+	margin: 80px 0px 0px 0px;
 
 	&__items {
 		display: flex;
@@ -601,15 +611,15 @@ body._lock {
 	&__wrapper {}
 
 	&__post {
-		margin: 30px 0px 5px 0px;
+		margin: 20px 0px 5px 0px;
 		font-weight: 600;
-		@include adaptiv-font(32, 20);
+		@include adaptiv-font(24, 22);
 		line-height: 118%;
 		color: var(--page-text);
 	}
 
 	&__name {
-		@include adaptiv-font(24, 16);
+		font-size: 20px;
 		line-height: 140%;
 		color: var(--page-text);
 	}
@@ -619,7 +629,7 @@ body._lock {
 
 /*FEEDBACKS*/
 .feedbacks {
-	padding: 224px 0px 0px 0px;
+	padding: 144px 0px 0px 0px;
 
 	&__container {}
 
@@ -632,7 +642,7 @@ body._lock {
 	&__subtitle {}
 
 	&__content {
-		padding: 100px 0px 0px 0px;
+		padding: 80px 0px 0px 0px;
 		position: relative;
 	}
 
@@ -693,6 +703,7 @@ body._lock {
 }
 
 .feedbacks-button-prev {
+	margin: 0px 20px 0px 0px;
 	cursor: pointer;
 }
 
@@ -718,7 +729,7 @@ body._lock {
 
 	&__name {
 		margin: 0px 0px 0px 10px;
-		@include adaptiv-font(20, 24);
+		font-size: 20px;
 		line-height: 140%;
 		color: #9A9A9A;
 	}
@@ -730,7 +741,7 @@ body._lock {
 
 	&__text {
 		max-width: 717px;
-		@include adaptiv-font(24, 20);
+		font-size: 20px;
 		line-height: 140%;
 		color: var(--page-text);
 	}
@@ -761,7 +772,7 @@ body._lock {
 }
 
 .connection {
-	padding: 200px 0px 0px 0px;
+	padding: 80px 0px 0px 0px;
 
 	&__container {
 		display: flex;
@@ -796,7 +807,7 @@ body._lock {
 	}
 
 	&__form {
-		margin: 50px 0px 0px 0px;
+		margin: 80px 0px 0px 0px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -814,7 +825,7 @@ body._lock {
 	}
 
 	&__form-input {
-		width: 150%;
+		width: 124%;
 		padding: 15px 0px;
 		font-family: 'Exo 2';
 		font-size: 24px;
@@ -909,7 +920,7 @@ body._lock {
 /*FOOTER*/
 
 .footer {
-	padding: 145px 0px;
+	padding: 140px 0px;
 	background: var(--footer-bg);
 
 	&__container {
@@ -934,12 +945,12 @@ body._lock {
 
 	&__social {
 		font-weight: 500;
-		@include adaptiv-font(32, 28);
+		font-size: 24px;
 		line-height: 160%;
 		color: #FFFCFC;
 
 		&:not(:last-child) {
-			margin: 0px 50px 0px 0px;
+			margin: 0px 30px 0px 0px;
 		}
 
 		&:last-child {
@@ -950,17 +961,17 @@ body._lock {
 	&__social-tablet {
 		display: none;
 		font-weight: 700;
-		@include adaptiv-font(32, 28);
+		font-size: 28px;
 		line-height: 160%;
 		color: #FFFCFC;
 	}
 
 	&__privacy {
-		margin: 45px 0px 0px 0px;
+		margin: 50px 0px 0px 0px;
 	}
 
 	&__privacy-link {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 120%;
 		color: #FFFCFC;
 
@@ -974,7 +985,7 @@ body._lock {
 
 /*PORTFOLIO*/
 .portfolio {
-	padding: 100px 0px 0px 0px;
+	padding: 70px 0px 60px 0px;
 	background: var(--page-gray);
 
 	&__container {}
@@ -1010,13 +1021,13 @@ body._lock {
 	&__link {
 		margin: 50px 0px 0px 0px;
 		font-weight: 500;
-		font-size: 36px;
+		font-size: 22px;
 		line-height: 120%;
 		color: var(--page-text);
 		opacity: 0.6;
 
 		&:not(:last-child) {
-			margin: 50px 40px 0px 0px;
+			margin: 50px 50px 0px 0px;
 		}
 
 		&.active {
@@ -1026,7 +1037,7 @@ body._lock {
 	}
 
 	&__content {
-		margin: 100px 0px 0px 0px;
+		margin: 80px 0px 0px 0px;
 	}
 
 	&__block {
@@ -1060,7 +1071,7 @@ body._lock {
 		margin: 20px 0px 0px 0px;
 		display: block;
 		font-weight: 500;
-		@include adaptiv-font(36, 20);
+		@include adaptiv-font(24, 20);
 		line-height: 120%;
 		color: var(--page-text);
 	}
