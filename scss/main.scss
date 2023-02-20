@@ -8,6 +8,7 @@ $maxWidth: 1680;
 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
 
+/* ROOT */
 :root {
 	/* LIGHT MODE */
 	--page-text: #231B19;
@@ -176,6 +177,10 @@ body._lock {
 		display: none;
 	}
 
+	&__button {
+		display: none;
+	}
+
 	&__footer {
 		display: flex;
 		align-items: center;
@@ -327,7 +332,6 @@ body._lock {
 /* ===================== */
 
 /*WORKS*/
-
 .section-header {
 	margin: 0px 0px 0px auto;
 	position: relative;
@@ -944,7 +948,6 @@ body._lock {
 /* ===================== */
 
 /*FOOTER*/
-
 .footer {
 	padding: 140px 0px;
 	background: var(--footer-bg);
@@ -1125,7 +1128,7 @@ body._lock {
 
 /* ===================== */
 
-/*Product*/
+/*PRODUCT*/
 .product {
 	padding: 120px 0px 120px 0px;
 
@@ -1176,7 +1179,7 @@ body._lock {
 
 /* ===================== */
 
-/*Price-list*/
+/*PRICE-LIST*/
 .price-list {
 	padding: 120px 0px 0px 0px;
 
@@ -1236,7 +1239,7 @@ body._lock {
 
 /* ===================== */
 
-/*Stages*/
+/*STAGES*/
 .stages {
 	padding: 144px 0px 120px 0px;
 
@@ -1276,6 +1279,7 @@ body._lock {
 		line-height: 120%;
 		color: var(--page-text);
 		position: relative;
+
 		&:after {
 			position: absolute;
 			content: '';
@@ -1309,6 +1313,7 @@ body._lock {
 .number-red {
 	color: var(--price-text);
 }
+/* ===================== */
 
 
 

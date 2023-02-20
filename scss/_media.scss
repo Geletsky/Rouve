@@ -243,7 +243,6 @@
 	}
 
 	.button {
-		font-size: 22px;
 		width: 180px;
 		height: 180px;
 	}
@@ -675,7 +674,7 @@
 
 		&__list {
 			flex-direction: column;
-			text-align: right;
+			align-items: end;
 
 			& li:not(:last-child) {
 				margin: 0px 0px 45px 0px;
@@ -690,6 +689,21 @@
 
 		&__link-mobile {
 			display: block;
+		}
+
+		&__button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 180px;
+			height: 180px;
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 118.181818%;
+			color: #FFFFFF;
+			background: #BF021F;
+			border-radius: 50%;
 		}
 
 		&__footer._active {
@@ -740,8 +754,6 @@
 		}
 
 		&__button {
-			position: relative;
-			z-index: 100;
 			margin: 80px 100px 0px auto;
 		}
 	}
