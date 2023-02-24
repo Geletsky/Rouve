@@ -39,23 +39,11 @@ $maxWidth: 1680;
 	--feedbacks-item-shadow: drop-shadow(0px 15px 20px rgba(63, 67, 76, 0.2));
 	--qoute-fill: #52555B;
 	--form: rgba(255, 252, 252, 0.6);
-
-	transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-ms-transition: all 1s ease 0s;
-	-o-transition: all 1s ease 0s;
 }
 
 body {
 	font-family: "Exo 2";
 	background: var(--page-bg);
-
-	transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-ms-transition: all 1s ease 0s;
-	-o-transition: all 1s ease 0s;
 }
 
 body._lock {
@@ -94,7 +82,6 @@ body._lock {
 		left: 0;
 		z-index: 500;
 		background: var(--page-bg);
-		transition: all 1s ease 0s;
 		animation-name: show-header;
 		animation-duration: 1s;
 
@@ -171,6 +158,34 @@ body._lock {
 		font-size: 20px;
 		line-height: 121%;
 		color: var(--page-text);
+		position: relative;
+		transition: color .5s ease;
+
+		&:after {
+			position: absolute;
+			content: '';
+			bottom: -8px;
+			left: 0;
+			width: 0%;
+			height: 2px;
+			background: #BF021F;
+			transition: width .5s ease;
+		}
+
+		&.active {
+			position: relative;
+			color: #BF021F;
+
+			&:after {
+				position: absolute;
+				content: '';
+				bottom: -8px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: #BF021F;
+			}
+		}
 	}
 
 	&__link-mobile {
@@ -199,6 +214,7 @@ body._lock {
 	}
 
 	&__dark-mode {
+		padding: 5px 7px;
 
 		& svg path {
 			fill: var(--page-text);
@@ -208,6 +224,11 @@ body._lock {
 			-moz-transition: fill .3s ease 0s;
 			-ms-transition: fill .3s ease 0s;
 			-o-transition: fill .3s ease 0s;
+		}
+
+		&._active {
+			background: #1C212D;
+			border-radius: 50%;
 		}
 	}
 }
@@ -289,10 +310,44 @@ body._lock {
 		-ms-transform: translateX(-50%);
 		-o-transform: translateX(-50%);
 
+		// animation: scrollDown 1.5s ease infinite;
+		animation-name: scrollDown;
+		animation-duration: 2s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+
 		& svg path,
 		& svg rect {
 			fill: var(--page-text);
 		}
+	}
+}
+
+// @keyframes scrollDown {
+// 	0% {
+// 		bottom: 5%;
+// 	}
+
+// 	100% {
+// 		bottom: 1%;
+// 		opacity: 0;
+// 	}
+// }
+
+@keyframes scrollDown {
+	0% {
+		opacity: 1;
+		transform: translate(-50%, 0);
+	}
+
+	50% {
+		opacity: 0.5;
+		transform: translate(-50%, 10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(-50%, 0);
 	}
 }
 
@@ -310,6 +365,7 @@ body._lock {
 	color: #FFFFFF;
 	background: #BF021F;
 	border-radius: 50%;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
 }
 
 .button-back {
@@ -418,9 +474,13 @@ body._lock {
 
 	&__photo {
 		display: block;
+		border-radius: 5.6px;
+		overflow: hidden;
+		
 
 		& img {
 			max-width: 100%;
+			
 		}
 	}
 
@@ -467,7 +527,6 @@ body._lock {
 	}
 
 	&__media {
-		margin: 0px 90px 0px 0px;
 		flex: 0 1 28%;
 	}
 
@@ -581,7 +640,6 @@ body._lock {
 	}
 
 	&__media {
-		margin: 0px 90px 0px 0px;
 		flex: 0 1 28%;
 	}
 
@@ -636,6 +694,11 @@ body._lock {
 		&:last-child {
 			margin: 25px 0px 0px 0px;
 		}
+	}
+
+	&__image {
+		overflow: hidden;
+		border-radius: 8px;
 	}
 
 	&__wrapper {}
@@ -739,11 +802,11 @@ body._lock {
 .swiper-button-disabled svg rect,
 .swiper-button-disabled svg path {
 	opacity: .5;
-	transition: all .7s ease 0s;
-	-webkit-transition: all .7s ease 0s;
-	-moz-transition: all .7s ease 0s;
-	-ms-transition: all .7s ease 0s;
-	-o-transition: all .7s ease 0s;
+	transition: opacity .7s ease 0s;
+	-webkit-transition: opacity .7s ease 0s;
+	-moz-transition: opacity .7s ease 0s;
+	-ms-transition: opacity .7s ease 0s;
+	-o-transition: opacity .7s ease 0s;
 }
 
 .items-left {
@@ -886,9 +949,10 @@ body._lock {
 	}
 
 	&__button {
+		font-family: "Exo 2";
 		flex: 0 0 auto;
-		width: 280px;
-		height: 280px;
+		width: 230px;
+		height: 230px;
 		border-radius: 50%;
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
@@ -1091,6 +1155,8 @@ body._lock {
 
 	&__photo {
 		display: block;
+		overflow: hidden;
+		border-radius: 5.6px;
 
 		& img {
 			max-width: 100%;
@@ -1313,6 +1379,7 @@ body._lock {
 .number-red {
 	color: var(--price-text);
 }
+
 /* ===================== */
 
 

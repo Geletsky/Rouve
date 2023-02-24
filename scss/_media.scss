@@ -2,17 +2,91 @@
 	/* LIGHT MODE */
 	--menu-burger-bg: #0d0a0a;
 	--menu-link: #fff;
+	--box-shadow-hover: rgba(0, 0, 0, 0.5); 
 }
 
 .dark {
 	--menu-burger-bg: #fff;
 	--menu-link: #231B19;
+	--box-shadow-hover: rgb(191 2 31);
+}
 
-	transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-ms-transition: all 1s ease 0s;
-	-o-transition: all 1s ease 0s;
+@media (any-hover: hover) {
+	.menu {
+		&__link {
+			transition: color .5s ease;
+
+			&:hover {
+				color: #BF021F;
+
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.button {
+		transition: box-shadow .5s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 50px rgb(191 2 31);
+		}
+	}
+
+	.card-works__photo img,
+	.card-portfolio__photo img {
+		transition: transform .5s ease;
+	}
+
+	.card-hover:hover .card-works__photo img,
+	.card-hover:hover .card-portfolio__photo img {
+		transform: scale(1.1);
+	}
+
+	.card-hover:hover .card-works__title,
+	.card-hover:hover .card-portfolio__title {
+		text-decoration: underline;
+	}
+
+	.name-services {
+		&__item {
+			transition: box-shadow .5s ease;
+
+			&:hover {
+				box-shadow: 0px 0px 50px var(--box-shadow-hover);
+			}
+		}
+	}
+
+	.people-about {
+		&__item img {
+			transition: transform .5s ease;
+		}
+
+		&__item:hover img {
+			transform: scale(1.1);
+		}
+
+		&__item:hover .people-about__post,
+		&__item:hover .people-about__name {
+			text-decoration: underline;
+		}
+	}
+
+	.price-list {
+		&__card {
+			transition: box-shadow .5s ease;
+
+			&:hover {
+				box-shadow: 0px 0px 50px var(--box-shadow-hover);
+			}
+
+			&:hover .price-list__button {
+				box-shadow: 0px 0px 50px rgb(191 2 31);
+			}
+		}
+	}
 }
 
 /*MEDIA*/
@@ -682,7 +756,7 @@
 		}
 
 		&__link {
-			font-weight: 700;
+			font-weight: 600;
 			font-size: 32px;
 			color: var(--menu-link);
 		}
@@ -936,6 +1010,14 @@
 
 		&__wrapper {
 			flex: 0 1 75%;
+		}
+	}
+
+	.dark-mode-btn {
+		padding: 0px;
+
+		&._active {
+			background: none;
 		}
 	}
 }
