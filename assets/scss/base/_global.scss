@@ -1,0 +1,24 @@
+body {
+	font-family: 'Exo 2';
+}
+
+body._lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+[class*="__container"] {
+	max-width: 1710px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

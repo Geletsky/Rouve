@@ -1,5 +1,11 @@
 /*----------Basic Styles---------- */
 @import 'base/_reset.scss';
+@import 'base/_global.scss';
+@import 'base/_variables.scss';
+
+
+/*----------Pages---------- */
+@import 'pages/_index.scss';
 
 
 /*----------Media---------- */

@@ -1,0 +1,163 @@
+/*PC*/
+@media (max-width: 1087px) {}
+
+/* ===================== */
+
+/*TABLET*/
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		max-width: 850px;
+	}
+
+	.menu {
+		&__list {
+			gap: 25px;
+		}
+
+		&__actions {
+			gap: 20px;
+		}
+	}
+}
+
+/* ===================== */
+
+/*MOBILE*/
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: none;
+	}
+
+	.menu {
+		flex-direction: row-reverse;
+		justify-content: flex-start;
+
+		&__icon {
+			margin: 0px 0px 0px 40px;
+
+			display: block;
+
+			position: relative;
+			width: 37px;
+			height: 14px;
+			z-index: 5;
+			cursor: pointer;
+
+			&._active {
+				height: 5px;
+			}
+
+			& span,
+			&::before {
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 4px;
+
+				background: #bf021f;
+				border-radius: 50px;
+
+				transition: all .3s ease;
+			}
+
+			& span {
+				width: 25px;
+				right: 0;
+			}
+
+			&._active span {
+				width: 37px;
+
+				transform: rotate(-45deg);
+			}
+
+			&::before {
+				bottom: 0;
+			}
+
+			&._active::before {
+				transform: rotate(45deg);
+			}
+		}
+
+		&__body {
+			padding: 174px 15px 0px 0px;
+
+			position: fixed;
+			top: 0;
+			right: -100%;
+			width: 320px;
+			height: 100%;
+			overflow: auto;
+
+			background: var(--menu-burger-bg);
+
+			transition: right .3s ease;
+
+			&._active {
+				right: 0;
+			}
+		}
+
+		&__list {
+			flex-direction: column;
+			align-items: flex-end;
+			gap: 40px;
+		}
+
+		&__link {
+			font-weight: 500;
+			font-size: 28px;
+			line-height: 121%;
+			color: var(--text-menu-burger);
+		}
+
+		&__link-none {
+			display: block;
+		}
+
+		&__actions._active .menu__language,
+		&__actions._active svg path {
+			color: var(--text-menu-burger);
+			fill: var(--text-menu-burger);
+		}
+	}
+}
+
+/* ===================== */
+
+/*MOBILE SMALL*/
+@media (max-width: 479.98px) {
+	.header {
+		&__logo img {
+			max-width: 42px;
+		}
+
+		&__logo svg {
+			max-width: 100px;
+		}
+	}
+
+	.menu {
+		position: relative;
+
+		&__body {
+			width: 272px;
+		}
+
+		&__actions {
+			position: absolute;
+			top: -13px;
+			right: 70px;
+
+			opacity: 0;
+
+			&._active {
+				opacity: 1;
+				transition: opacity .2s ease .1s;
+			}
+		}
+	}
+}
+
+/* ===================== */

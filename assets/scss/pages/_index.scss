@@ -1,0 +1,78 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		min-height: 140px;
+	}
+
+	&__logo {
+		flex: 0 1 28%;
+
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__logo-text {
+		& svg path {
+			fill: var(--logo-color);
+		}
+	}
+
+	&__menu {}
+}
+
+.menu {
+	flex: 0 1 72%;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__icon {
+		display: none;
+	}
+
+	&__body {}
+
+	&__list {
+		display: flex;
+		gap: 40px;
+	}
+
+	&__link {
+		font-size: 20px;
+		line-height: 140%;
+		color: var(--text-color);
+	}
+
+	&__link-none {
+		display: none;
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+
+		position: relative;
+	}
+
+	&__language {
+		font-size: 20px;
+		line-height: 140%;
+		color: var(--text-color);
+	}
+
+	&__dark-mode svg path {
+		font-size: 20px;
+		line-height: 140%;
+		fill: var(--text-color);
+	}
+}
