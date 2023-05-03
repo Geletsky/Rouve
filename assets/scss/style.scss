@@ -4,6 +4,20 @@
 @import 'base/_variables.scss';
 
 
+/*----------Mixins---------- */
+$maxWidth: 1680;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
+/*----------Components---------- */
+@import 'components/_button.scss';
+
+
 /*----------Pages---------- */
 @import 'pages/_index.scss';
 

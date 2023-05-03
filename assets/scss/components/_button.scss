@@ -1,0 +1,18 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 230px;
+	height: 230px;
+
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 118%;
+	color: #FFFFFF;
+	text-align: center;
+
+	background: #BF021F;
+	border-radius: 50%;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+}

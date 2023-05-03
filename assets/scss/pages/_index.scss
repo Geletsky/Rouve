@@ -1,3 +1,4 @@
+/* Header */
 .header {
 	position: absolute;
 	top: 0;
@@ -76,3 +77,80 @@
 		fill: var(--text-color);
 	}
 }
+
+/* ===================== */
+
+/* Hero */
+.hero {
+	padding: 208px 0px 200px 0px;
+
+	position: relative;
+
+	background: var(--bg-color);
+
+	&__scroll {
+		position: absolute;
+		left: 50%;
+		bottom: 4%;
+		cursor: pointer;
+
+		transform: translateX(-50%);
+
+		& svg path,
+		& svg rect {
+			fill: var(--text-color);
+		}
+	}
+
+	&__container {
+		display: flex;
+	}
+
+	&__action {
+		flex: 0 1 28%;
+
+		display: flex;
+		justify-content: center;
+	}
+
+	&__button {
+		margin: 40px 0px 0px 0px;
+	}
+
+	&__content {
+		flex: 0 1 72%;
+
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: '';
+			top: 0;
+			right: 0;
+			width: 4px;
+			height: 100%;
+
+			background: #BF021F;
+			border-radius: 20px;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		@include adaptiv-font(80, 28);
+		line-height: 120%;
+		color: var(--text-color);
+	}
+
+	&__subtitle {
+		margin: 40px 0px 0px 0px;
+
+		max-width: 680px;
+
+		font-size: 22px;
+		line-height: 150%;
+		color: var(--text-color);
+	}
+}
+
+/* ===================== */
