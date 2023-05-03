@@ -8,7 +8,7 @@
 
 @media (max-height: 900px) {
 	.hero {
-		padding: 208px 0px 0px 0px;
+		padding: 208px 0px 80px 0px;
 		min-height: 100vh;
 	}
 }
@@ -19,6 +19,12 @@
 			left: 28%;
 
 			transform: translateX(0%);
+		}
+	}
+
+	.item-portfolio {
+		&__image img {
+			max-width: 100%;
 		}
 	}
 }
@@ -37,6 +43,10 @@
 	.button {
 		width: 180px;
 		height: 180px;
+	}
+
+	.section {
+		padding: 104px 0px 0px 0px;
 	}
 
 	.menu {
@@ -62,6 +72,63 @@
 			margin: 40px 30px 0px 0px;
 		}
 	}
+
+	.portfolio {
+		&__content {
+			margin: 92px 0px 0px 0px;
+
+			flex-direction: column;
+			gap: 40px;
+		}
+
+		&__items {
+			gap: 40px;
+		}
+
+		&__group {
+			gap: 20px;
+		}
+
+		&__button-touch {
+			margin: -20px 8% 0px 0px;
+
+			display: flex;
+
+			align-self: flex-end;
+		}
+	}
+
+	.item-portfolio {
+		&__half {
+			margin: 0px 0px 0px 0px;
+			max-width: none;
+
+			& img {
+				width: 100%;
+			}
+		}
+	}
+
+	.item-portfolio-order-1 {
+		order: 1;
+	}
+
+	.item-portfolio-order-2 {
+		order: 3;
+	}
+
+	.item-portfolio-order-3 {
+		order: 2;
+	}
+
+	.portfolio__items-right {
+		flex-direction: row-reverse;
+		gap: 20px;
+	}
+
+	.portfolio__button-pc {
+		display: none;
+	}
 }
 
 /* ===================== */
@@ -70,6 +137,14 @@
 @media (max-width: 767.98px) {
 	[class*="__container"] {
 		max-width: none;
+	}
+
+	.section-header {
+		width: 100%;
+	}
+
+	.subtitle {
+		margin: 30px 30px 0px 0px;
 	}
 
 	.menu {
@@ -190,6 +265,14 @@
 
 /*MOBILE SMALL*/
 @media (max-width: 479.98px) {
+	.section {
+		padding: 50px 0px 0px 0px;
+	}
+
+	.subtitle {
+		margin: 20px 30px 0px 0px;
+	}
+
 	.header {
 		&__logo img {
 			max-width: 42px;
@@ -222,7 +305,7 @@
 	}
 
 	.hero {
-		padding: 174px 0px 0px 0px;
+		padding: 174px 0px 50px 0px;
 
 		&__subtitle {
 			margin: 20px 30px 0px 0px;
@@ -231,6 +314,38 @@
 		&__button {
 			margin: 50px 0px 0px 0px;
 		}
+	}
+
+	.portfolio {
+		&__content {
+			margin: 62px 0px 0px 0px;
+			gap: 20px;
+		}
+
+		&__items {
+			gap: 20px;
+		}
+
+		&__item {
+			& img {
+				max-width: none;
+				width: 100vw;
+				margin-left: calc(50% - 50vw);
+			}
+		}
+
+		&__group {
+			flex-direction: column;
+		}
+
+		&__button-touch {
+			margin: 50px 0px 0px 0px;
+		}
+	}
+
+	.portfolio__items-right {
+		flex-direction: column;
+		gap: 20px;
 	}
 }
 

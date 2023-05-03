@@ -1,0 +1,32 @@
+.section-header {
+	margin: 0px 0px 0px auto;
+
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 4px;
+		height: 100%;
+		background: #BF021F;
+		border-radius: 20px;
+	}
+}
+
+.title {
+	font-weight: 600;
+	@include adaptiv-font(48, 32);
+	line-height: 120%;
+	color: var(--text-color);
+}
+
+.subtitle {
+	margin: 40px 30px 0px 0px;
+
+	max-width: 550px;
+	@include adaptiv-font(22, 20);
+	line-height: 150%;
+	color: var(--text-color);
+}
