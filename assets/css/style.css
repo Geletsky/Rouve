@@ -365,6 +365,53 @@ body._lock {
 }
 
 /* ===================== */
+/* About */
+.about {
+  background: var(--bg-color);
+}
+.about__container {
+  display: flex;
+}
+.about__action {
+  flex: 0 1 28%;
+  display: flex;
+  justify-content: center;
+}
+.about__content {
+  flex: 0 1 72%;
+}
+.about__items {
+  margin: 112px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4%;
+}
+.item-about:nth-child(2) {
+  margin: 106px 0px 0px 0px;
+}
+.item-about:nth-child(3) {
+  margin: 24px 0px 0px 0px;
+}
+.item-about__image img {
+  max-width: 100%;
+}
+.item-about__info {
+  margin: 20px 0px 0px 0px;
+}
+.item-about__title {
+  font-weight: 600;
+  font-size: calc(22px + 2 * ((100vw - 320px) / 1360));
+  line-height: 120%;
+  color: var(--text-color);
+}
+.item-about__name {
+  margin: 5px 0px 0px 0px;
+  font-size: calc(20px + 2 * ((100vw - 320px) / 1360));
+  line-height: 140%;
+  color: var(--text-color);
+}
+
+/* ===================== */
 /*----------Media---------- */
 @media (max-height: 700px) {
   .hero__scroll {
@@ -470,6 +517,21 @@ body._lock {
   }
   .item-services__body {
     margin: 0px 0px 40px 0px;
+  }
+  .about__action {
+    justify-content: flex-start;
+  }
+  .about__items {
+    margin: 92px 0px 0px 0px;
+  }
+  .item-about:nth-child(2) {
+    margin: 64px 0px 0px 0px;
+  }
+  .item-about:nth-child(3) {
+    margin: 5px 0px 0px 0px;
+  }
+  .item-about__info {
+    margin: 10px 0px 0px 0px;
   }
 }
 /* ===================== */
@@ -580,6 +642,15 @@ body._lock {
     margin: 92px 0px 0px 0px;
     gap: 30px;
   }
+  .about__container {
+    flex-direction: column-reverse;
+  }
+  .about__action {
+    justify-content: flex-end;
+  }
+  .about__button {
+    margin: 60px 8% 0px 0px;
+  }
 }
 /* ===================== */
 /*MOBILE SMALL*/
@@ -667,6 +738,25 @@ body._lock {
   }
   .item-services__more {
     align-self: flex-end;
+  }
+  .about__button {
+    margin: 50px 0px 0px 0px;
+  }
+  .about__items {
+    margin: 62px 0px 0px 0px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item-about:nth-child(2) {
+    margin: 0px 0px 0px 0px;
+  }
+  .item-about:nth-child(3) {
+    margin: 0px 0px 0px 0px;
+  }
+  .item-about__image img {
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
   }
 }
 /* ===================== */
