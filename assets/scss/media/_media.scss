@@ -37,6 +37,39 @@
 			gap: 60px;
 		}
 	}
+
+	.contact {
+
+		&__header {
+			margin: 0px 0px 0px auto;
+
+			width: 72%;
+		}
+
+		&__media {
+			display: none;
+		}
+
+		&__content {
+			flex: 0 1 100%;
+		}
+	}
+
+	.form-contact {
+		flex-direction: row-reverse;
+
+		&__wrapper {
+			flex: 0 1 72%;
+		}
+
+		&__input {
+			width: 80%;
+		}
+
+		&__action {
+			flex: 0 1 28%;
+		}
+	}
 }
 
 /*PC*/
@@ -210,6 +243,27 @@
 		position: static;
 
 		justify-content: flex-end;
+	}
+
+	.contact {
+		&__form {
+			margin: 72px 0px 0px 0px;
+		}
+	}
+
+	.form-contact {
+
+		&__input {
+			width: 100%;
+		}
+
+		&__privacy {
+			margin: 8px 0px 0px 0px;
+		}
+
+		&__action {
+			justify-content: flex-start;
+		}
 	}
 }
 
@@ -391,6 +445,39 @@
 	.item-feedbacks {
 		padding: 40px 30px 40px 20px;
 	}
+
+	.contact {
+		&__header {
+			margin: 0px 0px 0px 0px;
+
+			width: 100%;
+		}
+	}
+
+	.form-contact {
+		flex-direction: column;
+		align-items: flex-start;
+
+		&__wrapper {
+			width: 100%;
+			flex: 0 1 100%;
+		}
+
+		&__input {
+			width: 100%;
+		}
+
+		&__action {
+			width: 100%;
+			flex: 0 1 100%;
+
+			justify-content: flex-end;
+		}
+
+		&__button {
+			margin: 50px 8% 0px 0px;
+		}
+	}
 }
 
 /* ===================== */
@@ -570,6 +657,24 @@
 
 	.buttons-feedbacks {
 		margin: 0px 0px 30px 0px;
+	}
+
+	.contact {
+		&__title {
+			margin: 0px 30px 0px 0px;
+		}
+	}
+
+	.form-contact {
+		margin: 62px 0px 0px 0px;
+
+		&__privacy {
+			margin: 0px 0px 0px 0px;
+		}
+
+		&__button {
+			margin: 50px 0px 0px 0px;
+		}
 	}
 }
 

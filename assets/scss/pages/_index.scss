@@ -419,6 +419,7 @@
 	&__slider-tablet {
 		display: none;
 	}
+
 	&__slider-mobile {
 		display: none;
 	}
@@ -506,6 +507,170 @@
 .swiper-button-disabled svg rect,
 .swiper-button-disabled svg path {
 	opacity: .5;
+}
+
+/* ===================== */
+
+/* Contact */
+.contact {
+	background: var(--bg-color);
+
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: 5%;
+	}
+
+	&__media {
+		flex: 0 1 35%;
+	}
+
+	&__content {
+		flex: 0 1 65%;
+	}
+
+	&__header {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 4px;
+			height: 100%;
+			background: #BF021F;
+			border-radius: 20px;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		@include adaptiv-font(32, 20);
+		line-height: 118%;
+		color: var(--text-color);
+	}
+
+	&__subtitle {
+		margin: 40px 30px 0px 0px;
+
+		max-width: 460px;
+		@include adaptiv-font(22, 18);
+		line-height: 150%;
+		color: var(--text-color);
+	}
+
+	&__form {
+		margin: 112px 0px 0px 0px;
+	}
+}
+
+.form-contact {
+	display: flex;
+	align-items: center;
+
+	&__wrapper {
+		flex: 0 1 55%;
+
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	&__line {
+		position: relative;
+	}
+
+	&__input {
+		padding: 15px 0px;
+
+		width: 100%;
+		font-family: 'Rubik';
+		font-size: 20px;
+		line-height: 140%;
+		color: var(--form-text-color);
+
+		border-bottom: 2px solid var(--form-text-color);
+		border-radius: 0;
+		background: transparent;
+		outline: none;
+	}
+
+	&__label {
+		font-family: 'Rubik';
+		font-size: 20px;
+		line-height: 140%;
+		color: var(--form-text-color);
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		& span {
+			color: #BF021F;
+		}
+	}
+
+	&__privacy {
+		margin: 20px 0px 0px 0px;
+
+		display: flex;
+		align-items: center;
+		gap: 15px;
+
+		& label {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 140%;
+
+			color: var(--text-color);
+			cursor: pointer;
+
+			& a {
+				text-decoration: underline;
+				color: #CA001E;
+			}
+
+			&::before {
+				margin: 0px 10px 0px 0px;
+
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				width: 24px;
+				height: 24px;
+				cursor: pointer;
+
+				border: 2px solid var(--text-color);
+			}
+		}
+
+		& input {
+
+			&[type='checkbox'] {
+				display: none;
+			}
+		}
+
+		& input[type='checkbox']:checked+label::before {
+			content: '';
+			width: 24px;
+			height: 24px;
+
+			background: url('../img/index/contact/check.svg') center/cover no-repeat;
+		}
+	}
+
+	&__action {
+		flex: 0 1 45%;
+
+		display: flex;
+		justify-content: center;
+	}
+
+	&__button {
+		cursor: pointer;
+	}
 }
 
 /* ===================== */
