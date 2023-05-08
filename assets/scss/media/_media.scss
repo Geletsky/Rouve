@@ -39,6 +39,7 @@
 	}
 
 	.contact {
+		padding: 116px 0px 80px 0px;
 
 		&__header {
 			margin: 0px 0px 0px auto;
@@ -68,6 +69,22 @@
 
 		&__action {
 			flex: 0 1 28%;
+		}
+	}
+
+	.footer {
+		&__wrapper {
+			gap: 30px;
+		}
+
+		&__social:last-child {
+			display: none;
+		}
+
+		&__social-tablet {
+			margin: 0px 0px 0px 0px;
+
+			display: block;
 		}
 	}
 }
@@ -246,6 +263,8 @@
 	}
 
 	.contact {
+		padding: 104px 0px 80px 0px;
+
 		&__form {
 			margin: 72px 0px 0px 0px;
 		}
@@ -263,6 +282,36 @@
 
 		&__action {
 			justify-content: flex-start;
+		}
+	}
+
+	.footer {
+		padding: 90px 0px 80px 0px;
+
+		&__container {
+			flex-direction: column;
+			align-items: center;
+			gap: 50px;
+		}
+
+		&__logo img {
+			max-width: 255px;
+		}
+
+		&__wrapper {
+			align-items: center;
+		}
+
+		&__socials {
+			gap: 20px;
+		}
+	}
+
+	.privacy-footer {
+		gap: 15px;
+
+		&__link {
+			font-size: 16px;
 		}
 	}
 }
@@ -660,6 +709,8 @@
 	}
 
 	.contact {
+		padding: 50px 0px;
+
 		&__title {
 			margin: 0px 30px 0px 0px;
 		}
@@ -674,6 +725,32 @@
 
 		&__button {
 			margin: 50px 0px 0px 0px;
+		}
+	}
+
+	.footer {
+		padding: 75px 0px 55px 0px;
+
+		&__container {
+			gap: 40px;
+		}
+
+		&__socials {
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		&__wrapper {
+			gap: 45px;
+		}
+	}
+
+	.privacy-footer {
+		flex-direction: column;
+		gap: 25px;
+
+		&__link {
+			font-size: 18px;
 		}
 	}
 }
