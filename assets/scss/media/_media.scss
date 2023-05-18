@@ -314,6 +314,18 @@
 			font-size: 16px;
 		}
 	}
+
+	.intro {
+		padding: 214px 0px 112px 0px;
+
+		&__action {
+			justify-content: flex-start;
+		}
+	}
+
+	.about-page {
+		padding: 104px 0px 80px 0px;
+	}
 }
 
 /* ===================== */
@@ -525,6 +537,24 @@
 
 		&__button {
 			margin: 50px 8% 0px 0px;
+		}
+	}
+
+	.intro {
+		padding: 214px 0px 80px 0px;
+
+		&__container {
+			flex-direction: column-reverse;
+		}
+
+		&__action {
+			width: 100%;
+
+			justify-content: flex-end;
+		}
+
+		&__button {
+			margin: 92px 8% 0px 0px;
 		}
 	}
 }
@@ -752,6 +782,18 @@
 		&__link {
 			font-size: 18px;
 		}
+	}
+
+	.intro {
+		padding: 194px 0px 50px 0px;
+
+		&__button {
+			margin: 82px 0px 0px 0px;
+		}
+	}
+
+	.about-page {
+		padding: 74px 0px 50px 0px;
 	}
 }
 

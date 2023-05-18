@@ -1,0 +1,51 @@
+.intro {
+	padding: 238px 0px 152px 0px;
+
+	background: var(--bg-color);
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__action {
+		flex: 0 1 28%;
+
+		display: flex;
+		justify-content: center;
+	}
+
+	&__button {}
+
+	&__content {
+		flex: 0 1 72%;
+
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: '';
+			top: 0;
+			right: 0;
+			width: 4px;
+			height: 100%;
+
+			background: #BF021F;
+			border-radius: 20px;
+		}
+	}
+
+	&__title {}
+
+	&__subtitle {}
+}
+
+.subtitle-intro {
+	max-width: 1000px;
+}
+
+.about-page {
+	padding: 144px 0px 120px 0px;
+	
+	background: var(--bg-color-2);
+}

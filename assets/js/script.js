@@ -54,27 +54,29 @@ function formValidation() {
 	const contactInput = document.querySelectorAll(".form-contact__input");
 	const contactChechbox = document.querySelector("input[type='checkbox']");
 
-	contactForm.addEventListener("submit", function (event) {
-		event.preventDefault();
-		if (!contactChechbox.checked) {
-			alert("Пожалуйста, установите флажок перед отправкой формы.");
-		}
-	});
-
-	for (let i = 0; i < contactInput.length; i++) {
-		const input = contactInput[i];
-
-		const label = input.nextElementSibling;
-
-		input.addEventListener("focus", function () {
-			label.style.display = "none";
-		});
-
-		input.addEventListener("blur", function () {
-			if (!input.value) {
-				label.style.display = "block";
+	if (contactForm) {
+		contactForm.addEventListener("submit", function (event) {
+			event.preventDefault();
+			if (!contactChechbox.checked) {
+				alert("Пожалуйста, установите флажок перед отправкой формы.");
 			}
 		});
+
+		for (let i = 0; i < contactInput.length; i++) {
+			const input = contactInput[i];
+
+			const label = input.nextElementSibling;
+
+			input.addEventListener("focus", function () {
+				label.style.display = "none";
+			});
+
+			input.addEventListener("blur", function () {
+				if (!input.value) {
+					label.style.display = "block";
+				}
+			});
+		}
 	}
 }
 
