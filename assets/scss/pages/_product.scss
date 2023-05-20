@@ -1,0 +1,46 @@
+.product {
+	padding: 120px 0px;
+
+	background: var(--bg-color-2);
+
+	&__container {}
+
+	&__content {
+		margin: 0px 0px 0px auto;
+
+		width: 72%;
+	}
+
+	&__wrapper {}
+
+	&__title {
+		margin: 0px 0px 100px 0px;
+
+		font-weight: 600;
+		@include adaptiv-font(48, 32);
+		line-height: 120%;
+		color: var(--text-color);
+	}
+
+	&__image {
+		margin: 0px 0px 120px 0px;
+
+		& img {
+			max-width: 100%;
+		}
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3%;
+	}
+
+	&__item {}
+}
+
+.item-product {
+	& img {
+		max-width: 100%;
+	}
+}
