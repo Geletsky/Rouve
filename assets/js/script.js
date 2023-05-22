@@ -81,3 +81,40 @@ function formValidation() {
 }
 
 formValidation();
+
+function tabs() {
+	if (document.querySelectorAll(".gallery__link").length > 0) {
+		const tabsLinkTickets = document.querySelectorAll(".gallery__link");
+		const tabsItemsTickets = document.querySelectorAll(".gallery__content");
+
+		if (tabsLinkTickets && tabsItemsTickets) {
+			tabsLinkTickets.forEach(onTabClickTickets);
+
+			function onTabClickTickets(item) {
+				item.addEventListener("click", function (event) {
+					event.preventDefault();
+					let currentLink = item;
+					let linkId = currentLink.getAttribute("href");
+					let currentBlock = document.querySelector(linkId);
+
+					if (!currentLink.classList.contains("_active")) {
+						tabsLinkTickets.forEach(function (item) {
+							item.classList.remove("_active");
+						});
+
+						tabsItemsTickets.forEach(function (item) {
+							item.classList.remove("_active");
+						});
+
+						currentLink.classList.add("_active");
+						currentBlock.classList.add("_active");
+					}
+				});
+			}
+
+			document.querySelector(".tabs-portfolio__link").click();
+		}
+	}
+}
+
+tabs();
