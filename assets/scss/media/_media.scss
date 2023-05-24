@@ -468,6 +468,12 @@
 		margin: 30px 30px 0px 0px;
 	}
 
+	.header {
+		&._fixed .header__container {
+			min-height: 80px;
+		}
+	}
+
 	.menu {
 		flex-direction: row-reverse;
 		justify-content: flex-start;

@@ -17,7 +17,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo">
+				<a href="index.html" class="header__logo">
 					<img src="assets/img/logo.svg" alt="Логотип">
 					<div class="header__logo-text">
 						<svg width="115" height="27" viewBox="0 0 115 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,11 +45,11 @@
 					</div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li><a href="#" class="menu__link">Портфолио</a></li>
-							<li><a href="#" class="menu__link">Услуги</a></li>
-							<li><a href="#" class="menu__link">О нас</a></li>
+							<li><a href="#portfolio" class="menu__link section-link"">Портфолио</a></li>
+							<li><a href="#services" class="menu__link section-link"">Услуги</a></li>
+							<li><a href="#about" class="menu__link section-link"">О нас</a></li>
 							<li><a href="#" class="menu__link menu__link-none">Контакты</a></li>
-							<li><a href="#" class="menu__link-button menu__link-none button">Смотреть<br>больше</a></li>
+							<li><a href="#contact" class="menu__link-button menu__link-none button section-link">Смотреть<br>больше</a></li>
 						</ul>
 					</nav>
 					<div class="menu__actions">
@@ -66,8 +66,8 @@
 			</div>
 		</header>
 		<main class="main">
-			<section class="hero">
-				<div class="hero__scroll">
+			<section class="hero section section-target">
+				<a href="#portfolio" class="hero__scroll section-link">
 					<svg width="16" height="32" viewBox="0 0 16 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<rect width="17.6" height="3.2" transform="matrix(-4.37114e-08 1 1 4.37114e-08 6.3999 0.799866)"
 							fill="#231B19" />
@@ -75,10 +75,10 @@
 							d="M13.2 18.4L2.80005 18.4C2.80153 20.8178 3.26555 23.208 4.16169 25.4139C5.05783 27.6197 6.36586 29.5915 8.00004 31.2C9.63716 29.5942 10.9472 27.6229 11.8436 25.4164C12.74 23.2099 13.2023 20.8184 13.2 18.4Z"
 							fill="#231B19" />
 					</svg>
-				</div>
+				</a>
 				<div class="hero__container">
 					<div class="hero__action">
-						<a href="#" class="hero__button button">Смотреть<br>больше</a>
+						<a href="#contact" class="hero__button button section-link">Оставить<br>заявку</a>
 					</div>
 					<div class="hero__content">
 						<h1 class="hero__title">Digital студия<br>для вашего бизнеса</h1>
@@ -88,7 +88,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="portfolio section">
+			<section id="portfolio" class="portfolio section section-target">
 				<div class="portfolio__container">
 					<div class="portfolio__header section-header">
 						<h2 class="portfolio__title title">Наши работы</h2>
@@ -143,7 +143,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="services section">
+			<section id="services" class="services section section-target">
 				<div class="services__container">
 					<div class="services__action">
 						<a href="#" class="services__button button">Наши<br>услуги</a>
@@ -218,7 +218,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="about section">
+			<section id="about" class="about section section-target">
 				<div class="about__container">
 					<div class="about__action">
 						<a href="#" class="about__button button">Кто мы<br>такие?</a>
@@ -261,7 +261,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="feedbacks section">
+			<section class="feedbacks section section-target">
 				<div class="feedbacks__container">
 					<div class="feedbacks__header section-header">
 						<h2 class="feedbacks__title title">Отзывы<br>наших клиентов</h2>
@@ -513,7 +513,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="contact section">
+			<section id="contact" class="contact section section-target">
 				<div class="contact__container">
 					<div class="contact__media">
 						<img src="assets/img/index/contact/01.png" alt="Изображение">
