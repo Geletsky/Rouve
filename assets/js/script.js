@@ -130,7 +130,7 @@ function tabs() {
 				});
 			}
 
-			document.querySelector(".tabs-portfolio__link").click();
+			document.querySelector(".gallery__link").click();
 		}
 	}
 }

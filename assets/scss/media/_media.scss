@@ -236,6 +236,10 @@
 			justify-content: flex-start;
 		}
 
+		&__button {
+			margin: 17px 0px 0px 0px;
+		}
+
 		&__items {
 			margin: 92px 0px 80px 0px;
 
@@ -252,6 +256,10 @@
 	.about {
 		&__action {
 			justify-content: flex-start;
+		}
+
+		&__button {
+			margin: 17px 0px 0px 0px;
 		}
 
 		&__items {

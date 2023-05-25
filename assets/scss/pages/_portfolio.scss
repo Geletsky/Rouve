@@ -51,7 +51,9 @@
 		gap: 60px;
 	}
 
-	&__item {}
+	&__item {
+		display: block;
+	}
 
 	&__group {
 		display: flex;
@@ -62,6 +64,7 @@
 }
 
 .item-gallery {
+	display: block;
 
 	&__image img {
 		max-width: 100%;

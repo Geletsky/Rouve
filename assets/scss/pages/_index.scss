@@ -246,6 +246,7 @@
 }
 
 .item-portfolio {
+	display: block;
 
 	&__image img {
 		width: 100%;
@@ -284,7 +285,9 @@
 		justify-content: center;
 	}
 
-	&__button {}
+	&__button {
+		margin: 45px 0px 0px 0px;
+	}
 
 	&__content {
 		flex: 0 1 72%;
@@ -381,7 +384,9 @@
 		justify-content: center;
 	}
 
-	&__button {}
+	&__button {
+		margin: 45px 0px 0px 0px;
+	}
 
 	&__content {
 		flex: 0 1 72%;
@@ -414,8 +419,12 @@
 		margin: 24px 0px 0px 0px;
 	}
 
-	&__image img {
-		max-width: 100%;
+	&__image {
+		cursor: pointer;
+
+		& img {
+			max-width: 100%;
+		}
 	}
 
 	&__info {
@@ -734,4 +743,5 @@
 		top: 0;
 	}
 }
+
 /* ===================== */

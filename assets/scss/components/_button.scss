@@ -19,7 +19,12 @@
 
 .button-border {
 	color: var(--text-color);
-	
+
 	background: transparent;
 	border: 4px solid #BF021F;
+
+	& svg path,
+	& svg rect {
+		fill: var(--text-color);
+	}
 }

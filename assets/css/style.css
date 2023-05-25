@@ -122,6 +122,9 @@ body._lock {
   background: transparent;
   border: 4px solid #BF021F;
 }
+.button-border svg path, .button-border svg rect {
+  fill: var(--text-color);
+}
 
 .section-header {
   margin: 0px 0px 0px auto;
@@ -383,6 +386,9 @@ body._lock {
   display: none;
 }
 
+.item-portfolio {
+  display: block;
+}
 .item-portfolio__image img {
   width: 100%;
 }
@@ -410,6 +416,9 @@ body._lock {
   flex: 0 1 28%;
   display: flex;
   justify-content: center;
+}
+.services__button {
+  margin: 45px 0px 0px 0px;
 }
 .services__content {
   flex: 0 1 72%;
@@ -479,6 +488,9 @@ body._lock {
   display: flex;
   justify-content: center;
 }
+.about__button {
+  margin: 45px 0px 0px 0px;
+}
 .about__content {
   flex: 0 1 72%;
 }
@@ -493,6 +505,9 @@ body._lock {
 }
 .item-about:nth-child(3) {
   margin: 24px 0px 0px 0px;
+}
+.item-about__image {
+  cursor: pointer;
 }
 .item-about__image img {
   max-width: 100%;
@@ -764,7 +779,7 @@ body._lock {
   background: #BF021F;
   border-radius: 20px;
 }
-.subtitle-intro {
+.intro__subtitle {
   max-width: 1000px;
 }
 
@@ -948,9 +963,15 @@ body._lock {
   flex-direction: column;
   gap: 60px;
 }
+.gallery__item {
+  display: block;
+}
 .gallery__group {
   display: flex;
   gap: 60px;
+}
+.item-gallery {
+  display: block;
 }
 .item-gallery__image img {
   max-width: 100%;
@@ -1132,6 +1153,9 @@ body._lock {
   .services__action {
     justify-content: flex-start;
   }
+  .services__button {
+    margin: 17px 0px 0px 0px;
+  }
   .services__items {
     margin: 92px 0px 80px 0px;
     gap: 40px;
@@ -1141,6 +1165,9 @@ body._lock {
   }
   .about__action {
     justify-content: flex-start;
+  }
+  .about__button {
+    margin: 17px 0px 0px 0px;
   }
   .about__items {
     margin: 92px 0px 0px 0px;
