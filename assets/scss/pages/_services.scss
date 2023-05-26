@@ -25,8 +25,9 @@
 	position: relative;
 
 	background: var(--bg-item-price-list);
-	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
 	border-radius: 8px;
+
+	transition: transform .5s ease, box-shadow .5s ease;
 
 	&__title {
 		font-weight: 600;

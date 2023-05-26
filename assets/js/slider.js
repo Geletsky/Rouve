@@ -4,6 +4,8 @@ function slider() {
 
 		spaceBetween: 50,
 
+		speed: 800,
+
 		slidesPerView: "auto",
 
 		navigation: {

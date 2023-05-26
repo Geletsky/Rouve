@@ -9,7 +9,9 @@
 		justify-content: space-between;
 	}
 
-	&__logo {}
+	&__logo {
+		display: block;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -29,6 +31,20 @@
 		font-size: 24px;
 		line-height: 120%;
 		color: #FFFCFC;
+
+		position: relative;
+		transition: all .5s ease;
+
+		&:after {
+			position: absolute;
+			content: '';
+			bottom: -8px;
+			left: 0;
+			width: 0%;
+			height: 2px;
+			background: #BF021F;
+			transition: width .5s ease;
+		}
 	}
 
 	&__social-email {
@@ -54,5 +70,19 @@
 		font-size: 18px;
 		line-height: 122%;
 		color: #FFFCFC;
+
+		position: relative;
+		transition: all .5s ease;
+
+		&:after {
+			position: absolute;
+			content: '';
+			bottom: -8px;
+			left: 0;
+			width: 0%;
+			height: 2px;
+			background: #BF021F;
+			transition: width .5s ease;
+		}
 	}
 }

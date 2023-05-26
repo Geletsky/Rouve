@@ -1,3 +1,101 @@
+@media (any-hover: hover) {
+
+	.menu {
+		&__link:hover {
+			color: #bf021f;
+
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+
+	.item-portfolio {
+		&__image:hover img {
+			transform: scale(1.2);
+		}
+
+		&__image:hover+.item-portfolio__title {
+			text-decoration: underline;
+		}
+
+		&__title:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.item-services {
+		&:hover {
+			transform: scale(1.02);
+			box-shadow: var(--shadow-item-services);
+		}
+
+		&:hover .item-services__more svg {
+			animation: slide-arrow 1s ease .3s;
+		}
+	}
+
+	.item-about {
+		&__image:hover img {
+			transform: scale(1.2);
+		}
+
+		&__image:hover::after {
+			opacity: 1;
+		}
+
+		&__image:hover .item-about__socials {
+			opacity: 1;
+			transform: translateY(0%);
+		}
+
+		&__image:hover+.item-about__info .item-about__title {
+			text-decoration: underline;
+		}
+	}
+
+	.footer {
+		&__social:hover {
+			color: #bf021f;
+
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+
+	.privacy-footer {
+		&__link:first-child:hover {
+			color: #bf021f;
+
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+
+	.item-gallery {
+		&__image:hover img {
+			transform: scale(1.2);
+		}
+
+		&__image:hover+.item-gallery__title {
+			text-decoration: underline;
+		}
+
+		&__title:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.item-price-list {
+		&:hover {
+			transform: scale(1.02);
+			box-shadow: var(--shadow-item-services);
+		}
+	}
+}
+
 @media (max-height: 700px) {
 	.hero {
 		&__scroll {
@@ -16,7 +114,7 @@
 @media (max-width: 1700px) {
 	.hero {
 		&__scroll {
-			left: 28%;
+			left: 28.5%;
 
 			transform: translateX(0%);
 		}
@@ -817,6 +915,12 @@
 		}
 	}
 
+	.item-portfolio {
+		&__image {
+			overflow: visible;
+		}
+	}
+
 	.portfolio__items-right {
 		flex-direction: column;
 		gap: 20px;
@@ -870,6 +974,10 @@
 	}
 
 	.item-about {
+
+		&__image {
+			overflow: visible;
+		}
 
 		&:nth-child(2) {
 			margin: 0px 0px 0px 0px;
