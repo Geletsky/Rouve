@@ -844,4 +844,21 @@
 	}
 }
 
+@keyframes slide-item {
+	0% {}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
 /* ===================== */
+
+@for $i from 1 to 6 {
+	$delay: ($i - 1) * 0.2;
+
+	.menu__body._active .menu__list li:nth-child(#{$i}) {
+		animation-delay: #{$delay}s;
+	}
+}

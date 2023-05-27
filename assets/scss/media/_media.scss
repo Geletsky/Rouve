@@ -609,7 +609,7 @@
 				background: #bf021f;
 				border-radius: 50px;
 
-				transition: all .3s ease;
+				transition: all .5s ease;
 			}
 
 			& span {
@@ -644,10 +644,14 @@
 
 			background: var(--bg-menu-burger);
 
-			transition: right .3s ease;
+			transition: right .8s ease;
 
 			&._active {
 				right: 0;
+
+				& .menu__list li {
+					animation: slide-item .6s forwards;
+				}
 			}
 		}
 
@@ -655,6 +659,11 @@
 			flex-direction: column;
 			align-items: flex-end;
 			gap: 40px;
+
+			& li {
+				opacity: 0;
+				transform: translateX(300%);
+			}
 		}
 
 		&__link {
@@ -859,19 +868,21 @@
 		position: relative;
 
 		&__body {
+			padding: 150px 15px 0px 0px;
+
 			width: 272px;
 		}
 
 		&__actions {
 			position: absolute;
-			top: -13px;
+			top: -10px;
 			right: 70px;
 
 			opacity: 0;
 
 			&._active {
 				opacity: 1;
-				transition: opacity .2s ease .1s;
+				transition: opacity .9s ease .1s;
 			}
 		}
 	}
