@@ -77,6 +77,14 @@
 
 			transition: transform .5s ease;
 		}
+
+		&:hover img {
+			transform: scale(1.2);
+		}
+
+		&:hover+.item-gallery__title {
+			text-decoration: underline;
+		}
 	}
 
 	&__title {
@@ -86,6 +94,10 @@
 		@include adaptiv-font(24, 20);
 		line-height: 140%;
 		color: var(--text-color);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	&__half {

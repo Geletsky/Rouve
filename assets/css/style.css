@@ -117,6 +117,7 @@ body._lock {
   background: #BF021F;
   border-radius: 50%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.5s ease;
 }
 
 .button-border {
@@ -199,6 +200,12 @@ body._lock {
   background: #BF021F;
   transition: width 0.5s ease;
 }
+.footer__social:hover {
+  color: #bf021f;
+}
+.footer__social:hover::after {
+  width: 100%;
+}
 .footer__social-email {
   margin: 0px 0px 0px 20px;
   font-weight: 700;
@@ -228,6 +235,12 @@ body._lock {
   height: 2px;
   background: #BF021F;
   transition: width 0.5s ease;
+}
+.privacy-footer__link:first-child:hover {
+  color: #bf021f;
+}
+.privacy-footer__link:first-child:hover::after {
+  width: 100%;
 }
 
 /*----------Pages---------- */
@@ -285,6 +298,12 @@ body._lock {
   color: var(--text-color);
   position: relative;
   transition: color 0.5s ease;
+}
+.menu__link:hover {
+  color: #BF021F;
+}
+.menu__link:hover:after {
+  width: 100%;
 }
 .menu__link:after {
   position: absolute;
@@ -428,6 +447,12 @@ body._lock {
   width: 100%;
   transition: transform 0.5s ease;
 }
+.item-portfolio__image:hover img {
+  transform: scale(1.2);
+}
+.item-portfolio__image:hover + .item-portfolio__title {
+  text-decoration: underline;
+}
 .item-portfolio__half {
   margin: 0px 0px 0px auto;
   max-width: 750px;
@@ -438,6 +463,9 @@ body._lock {
   font-size: calc(20px + 4 * ((100vw - 320px) / 1360));
   line-height: 140%;
   color: var(--text-color);
+}
+.item-portfolio__title:hover {
+  text-decoration: underline;
 }
 
 /* ===================== */
@@ -471,6 +499,13 @@ body._lock {
   background: var(--bg-item-services);
   border-radius: 8px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.item-services:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-item-services);
+}
+.item-services:hover .item-services__more svg {
+  animation: slide-arrow 1s ease 0.3s;
 }
 .item-services:last-child {
   grid-column: 1/3;
@@ -562,6 +597,19 @@ body._lock {
   opacity: 0;
   transition: opacity 0.5s ease;
   background: rgba(0, 0, 0, 0.5);
+}
+.item-about__image:hover img {
+  transform: scale(1.2);
+}
+.item-about__image:hover::after {
+  opacity: 1;
+}
+.item-about__image:hover .item-about__socials {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.item-about__image:hover + .item-about__info .item-about__title {
+  text-decoration: underline;
 }
 .item-about__socials {
   position: absolute;
@@ -928,6 +976,13 @@ body._lock {
   border-radius: 8px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+.item-price-list:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-item-services);
+}
+.item-price-list:hover .item-price-list__button {
+  box-shadow: 0px 0px 50px rgb(191, 2, 31);
+}
 .item-price-list__title {
   font-weight: 600;
   font-size: 24px;
@@ -1104,6 +1159,12 @@ body._lock {
   width: 100%;
   transition: transform 0.5s ease;
 }
+.item-gallery__image:hover img {
+  transform: scale(1.2);
+}
+.item-gallery__image:hover + .item-gallery__title {
+  text-decoration: underline;
+}
 .item-gallery__title {
   margin: 20px 0px 0px 0px;
   max-width: 450px;
@@ -1111,72 +1172,18 @@ body._lock {
   line-height: 140%;
   color: var(--text-color);
 }
+.item-gallery__title:hover {
+  text-decoration: underline;
+}
 .item-gallery__half {
   margin: 0px 0px 0px auto;
   max-width: 750px;
 }
 
 /*----------Media---------- */
-@media (any-hover: hover) {
-  .menu__link:hover {
-    color: #bf021f;
-  }
-  .menu__link:hover:after {
-    width: 100%;
-  }
-  .item-portfolio__image:hover img {
-    transform: scale(1.2);
-  }
-  .item-portfolio__image:hover + .item-portfolio__title {
-    text-decoration: underline;
-  }
-  .item-portfolio__title:hover {
-    text-decoration: underline;
-  }
-  .item-services:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow-item-services);
-  }
-  .item-services:hover .item-services__more svg {
-    animation: slide-arrow 1s ease 0.3s;
-  }
-  .item-about__image:hover img {
-    transform: scale(1.2);
-  }
-  .item-about__image:hover::after {
-    opacity: 1;
-  }
-  .item-about__image:hover .item-about__socials {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  .item-about__image:hover + .item-about__info .item-about__title {
-    text-decoration: underline;
-  }
-  .footer__social:hover {
-    color: #bf021f;
-  }
-  .footer__social:hover::after {
-    width: 100%;
-  }
-  .privacy-footer__link:first-child:hover {
-    color: #bf021f;
-  }
-  .privacy-footer__link:first-child:hover::after {
-    width: 100%;
-  }
-  .item-gallery__image:hover img {
-    transform: scale(1.2);
-  }
-  .item-gallery__image:hover + .item-gallery__title {
-    text-decoration: underline;
-  }
-  .item-gallery__title:hover {
-    text-decoration: underline;
-  }
-  .item-price-list:hover {
-    transform: scale(1.02);
-    box-shadow: var(--shadow-item-services);
+@media (pointer: coarse) {
+  .button:hover {
+    box-shadow: 0px 0px 50px rgb(191, 2, 31);
   }
 }
 @media (max-height: 700px) {

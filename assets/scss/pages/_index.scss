@@ -71,6 +71,14 @@
 		position: relative;
 		transition: color .5s ease;
 
+		&:hover {
+			color: #BF021F;
+
+			&:after {
+				width: 100%;
+			}
+		}
+
 		&:after {
 			position: absolute;
 			content: '';
@@ -263,6 +271,14 @@
 
 			transition: transform .5s ease;
 		}
+
+		&:hover img {
+			transform: scale(1.2);
+		}
+
+		&:hover+.item-portfolio__title {
+			text-decoration: underline;
+		}
 	}
 
 	&__half {
@@ -277,6 +293,10 @@
 		@include adaptiv-font(24, 20);
 		line-height: 140%;
 		color: var(--text-color);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -332,6 +352,15 @@
 	border-radius: 8px;
 
 	transition: transform .5s ease, box-shadow .5s ease;
+
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: var(--shadow-item-services);
+	}
+
+	&:hover .item-services__more svg {
+		animation: slide-arrow 1s ease .3s;
+	}
 
 	&:last-child {
 		grid-column: 1/3;
@@ -459,6 +488,24 @@
 			transition: opacity .5s ease;
 
 			background: rgba(0, 0, 0, .5);
+		}
+
+		&:hover img {
+			transform: scale(1.2);
+		}
+
+		&:hover::after {
+			opacity: 1;
+		}
+
+		&:hover .item-about__socials {
+			opacity: 1;
+			
+			transform: translateY(0%);
+		}
+
+		&:hover+.item-about__info .item-about__title {
+			text-decoration: underline;
 		}
 	}
 

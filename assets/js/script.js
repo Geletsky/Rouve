@@ -145,7 +145,7 @@ function activeSection() {
 
 			currentIndex = 0;
 			sections.forEach((section, index) => {
-				if (section.offsetTop -60 <= window.scrollY) {
+				if (section.offsetTop - 60 <= window.scrollY) {
 					currentIndex = index;
 				}
 			});
@@ -187,3 +187,46 @@ function scrollToSections() {
 }
 
 scrollToSections();
+
+function isMobileDevice() {
+	return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+function magneticButtonAnimation() {
+	const buttons = document.querySelectorAll('.button');
+
+	if (!isMobileDevice()) {
+		buttons.forEach(button => {
+			if (!button.classList.contains('item-price-list__button')) {
+				button.addEventListener('mousemove', event => {
+					const buttonRect = button.getBoundingClientRect();
+
+					// Получаем координаты центра элемента относительно окна браузера
+					const centerX = buttonRect.left + (buttonRect.width / 2);
+					const centerY = buttonRect.top + (buttonRect.height / 2);
+
+					// Получаем текущие координаты курсора мыши
+					const mouseX = event.clientX;
+					const mouseY = event.clientY;
+
+					// Вычисляем смещение курсора относительно центра элемента
+					const offsetX = mouseX - centerX;
+					const offsetY = mouseY - centerY;
+
+					button.style.transition = 'transform 0.35s ease';
+					button.style.transform = `translate(${offsetX * 0.3}px, ${offsetY * 0.3}px)`;
+
+					button.children[0].style.transition = 'transform 0.2s ease';
+					button.children[0].style.transform = `translate(${offsetX * 0.12}px, ${offsetY * 0.12}px)`;
+
+					button.addEventListener('mouseout', () => {
+						button.style.transform = `translate(0px, 0px)`;
+						button.children[0].style.transform = `translate(0px, 0px)`;
+					})
+				})
+			}
+		})
+	}
+}
+
+magneticButtonAnimation()
