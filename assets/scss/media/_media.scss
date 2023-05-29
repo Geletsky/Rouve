@@ -162,10 +162,6 @@
 		&__list {
 			gap: 25px;
 		}
-
-		&__actions {
-			gap: 20px;
-		}
 	}
 
 	.hero {
@@ -208,7 +204,7 @@
 	}
 
 	.item-portfolio {
-		&__half {
+		&-half {
 			margin: 0px 0px 0px 0px;
 			max-width: none;
 
@@ -446,7 +442,7 @@
 	}
 
 	.item-gallery {
-		&__half {
+		&-half {
 			margin: 0px 0px 0px 0px;
 
 			max-width: none;
@@ -495,7 +491,7 @@
 		justify-content: flex-start;
 
 		&__icon {
-			margin: 0px 0px 0px 40px;
+			margin: 0px 0px 0px 35px;
 
 			display: block;
 
@@ -591,7 +587,6 @@
 			display: flex;
 		}
 
-		&__actions._active .menu__language,
 		&__actions._active svg path {
 			color: var(--text-menu-burger);
 			fill: var(--text-menu-burger);
@@ -785,7 +780,7 @@
 
 		&__actions {
 			position: absolute;
-			top: -10px;
+			top: -7px;
 			right: 70px;
 
 			opacity: 0;
@@ -990,7 +985,7 @@
 	}
 
 	.intro {
-		padding: 194px 0px 50px 0px;
+		padding: 174px 0px 50px 0px;
 
 		&__button {
 			margin: 82px 0px 0px 0px;

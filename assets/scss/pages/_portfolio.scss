@@ -94,13 +94,14 @@
 		@include adaptiv-font(24, 20);
 		line-height: 140%;
 		color: var(--text-color);
+		font-weight: 400;
 
 		&:hover {
 			text-decoration: underline;
 		}
 	}
 
-	&__half {
+	&-half {
 		margin: 0px 0px 0px auto;
 
 		max-width: 750px;

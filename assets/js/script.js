@@ -230,3 +230,16 @@ function magneticButtonAnimation() {
 }
 
 magneticButtonAnimation()
+
+function goBack() {
+	const buttonBack = document.querySelector('.intro__button');
+
+	if (buttonBack) {
+		buttonBack.addEventListener('click', () => {
+			window.history.back()
+			console.log('отработала');
+		})
+	}
+}
+
+goBack();
