@@ -745,6 +745,20 @@
 			gap: 20px;
 		}
 	}
+
+	.privacy {
+		padding: 160px 0px 80px 0px;
+
+		&__content {
+			width: 100%;
+		}
+	}
+
+	.info-privacy {
+		&__title {
+			margin: 25px 0px 0px 0px;
+		}
+	}
 }
 
 /* ===================== */
@@ -1106,6 +1120,20 @@
 		&__image {
 			width: 100vw;
 			margin-left: calc(50% - 50vw);
+		}
+	}
+
+	.privacy {
+		padding: 140px 0px 50px 0px;
+
+		&__content {
+			width: 100%;
+		}
+	}
+
+	.info-privacy {
+		&__title {
+			margin: 25px 0px 0px 0px;
 		}
 	}
 }

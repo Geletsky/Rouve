@@ -1,0 +1,57 @@
+.privacy {
+	padding: 180px 0px 100px 0px;
+
+	background: var(--bg-color);
+
+	&__container {}
+
+	&__content {
+		margin: 0px 0px 0px auto;
+
+		width: 72%;
+	}
+
+	&__title {
+		margin: 0px 0px 15px 0px;
+
+		font-weight: 600;
+		@include adaptiv-font(48, 28);
+		line-height: 120%;
+		color: var(--text-color);
+	}
+
+	&__info {}
+}
+
+.info-privacy {
+
+	&__text {
+		margin: 15px 0px 0px 0px;
+
+		@include adaptiv-font(22, 18);
+		line-height: 150%;
+		color: var(--text-color);
+	}
+
+	&__title {
+		margin: 30px 0px 0px 0px;
+
+		font-weight: 600;
+		@include adaptiv-font(32, 24);
+		line-height: 120%;
+		color: var(--text-color);
+	}
+
+	&__list {
+		margin: 15px 0px 0px 0px;
+
+		& li {
+			margin: 15px 0px 0px 20px;
+
+			list-style: inside;
+			@include adaptiv-font(22, 18);
+			line-height: 150%;
+			color: var(--text-color);
+		}
+	}
+}
