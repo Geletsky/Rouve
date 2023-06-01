@@ -1,5 +1,3 @@
-// Laptop animation
-
 const laptopScreen = window.matchMedia('(min-width: 992px)');
 const touchScreen = window.matchMedia('(min-width: 320px) and (max-width: 991.98px)');
 

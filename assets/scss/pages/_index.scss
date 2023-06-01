@@ -6,7 +6,7 @@
 	width: 100%;
 	z-index: 50;
 
-	visibility: hidden;
+	// visibility: hidden;
 
 	&._fixed {
 		position: fixed;
@@ -193,10 +193,13 @@
 	}
 
 	&__mask {
+		display: block;
 		overflow: hidden;
 	}
 
-	&__mask-text {}
+	&__mask-text {
+		display: block;
+	}
 
 	&__subtitle {
 		margin: 40px 0px 0px 0px;
@@ -271,7 +274,6 @@
 
 	&__image {
 		display: block;
-		overflow: hidden;
 
 		border-radius: 5.6px;
 
@@ -279,14 +281,6 @@
 			width: 100%;
 
 			transition: transform .5s ease;
-		}
-
-		&:hover img {
-			transform: scale(1.2);
-		}
-
-		&:hover+.item-portfolio__title {
-			text-decoration: underline;
 		}
 	}
 
@@ -361,10 +355,9 @@
 	background: var(--bg-item-services);
 	border-radius: 8px;
 
-	transition: transform .5s ease, box-shadow .5s ease;
+	transition: box-shadow .5s ease;
 
 	&:hover {
-		transform: scale(1.02);
 		box-shadow: var(--shadow-item-services);
 	}
 
@@ -473,49 +466,12 @@
 	}
 
 	&__image {
-		overflow: hidden;
-
-		position: relative;
-
 		border-radius: 8px;
 
 		& img {
 			max-width: 100%;
 
 			transition: transform .5s ease;
-		}
-
-		&::after {
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 1;
-
-			opacity: 0;
-			transition: opacity .5s ease;
-
-			background: rgba(0, 0, 0, .5);
-		}
-
-		&:hover img {
-			transform: scale(1.2);
-		}
-
-		&:hover::after {
-			opacity: 1;
-		}
-
-		&:hover .item-about__socials {
-			opacity: 1;
-
-			transform: translateY(0%);
-		}
-
-		&:hover+.item-about__info .item-about__title {
-			text-decoration: underline;
 		}
 	}
 
@@ -913,7 +869,7 @@
 /* ===================== */
 
 @for $i from 1 to 6 {
-	$delay: ($i - 1) * 0.2;
+	$delay: ($i - 1) * 0.1;
 
 	.menu__body._active .menu__list li:nth-child(#{$i}) {
 		animation-delay: #{$delay}s;

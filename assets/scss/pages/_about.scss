@@ -28,10 +28,14 @@
 	&__title {}
 
 	&__mask {
+		display: block;
+
 		overflow: hidden;
 	}
 
-	&__mask-text {}
+	&__mask-text {
+		display: block;
+	}
 
 	&__subtitle {
 		max-width: 1000px;

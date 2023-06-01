@@ -251,7 +251,6 @@ body._lock {
   left: 0;
   width: 100%;
   z-index: 50;
-  visibility: hidden;
 }
 .header._fixed {
   position: fixed;
@@ -392,7 +391,11 @@ body._lock {
   color: var(--text-color);
 }
 .hero__mask {
+  display: block;
   overflow: hidden;
+}
+.hero__mask-text {
+  display: block;
 }
 .hero__subtitle {
   margin: 40px 0px 0px 0px;
@@ -446,18 +449,11 @@ body._lock {
 }
 .item-portfolio__image {
   display: block;
-  overflow: hidden;
   border-radius: 5.6px;
 }
 .item-portfolio__image img {
   width: 100%;
   transition: transform 0.5s ease;
-}
-.item-portfolio__image:hover img {
-  transform: scale(1.2);
-}
-.item-portfolio__image:hover + .item-portfolio__title {
-  text-decoration: underline;
 }
 .item-portfolio-half {
   margin: 0px 0px 0px auto;
@@ -505,10 +501,9 @@ body._lock {
   padding: 40px 30px 40px 30px;
   background: var(--bg-item-services);
   border-radius: 8px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
 }
 .item-services:hover {
-  transform: scale(1.02);
   box-shadow: var(--shadow-item-services);
 }
 .item-services:hover .item-services__more svg {
@@ -585,38 +580,11 @@ body._lock {
   margin: 24px 0px 0px 0px;
 }
 .item-about__image {
-  overflow: hidden;
-  position: relative;
   border-radius: 8px;
 }
 .item-about__image img {
   max-width: 100%;
   transition: transform 0.5s ease;
-}
-.item-about__image::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  background: rgba(0, 0, 0, 0.5);
-}
-.item-about__image:hover img {
-  transform: scale(1.2);
-}
-.item-about__image:hover::after {
-  opacity: 1;
-}
-.item-about__image:hover .item-about__socials {
-  opacity: 1;
-  transform: translateY(0%);
-}
-.item-about__image:hover + .item-about__info .item-about__title {
-  text-decoration: underline;
 }
 .item-about__socials {
   position: absolute;
@@ -914,19 +882,19 @@ body._lock {
 }
 
 .menu__body._active .menu__list li:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 }
 
 .menu__body._active .menu__list li:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 
 .menu__body._active .menu__list li:nth-child(4) {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 .menu__body._active .menu__list li:nth-child(5) {
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
 }
 
 .intro {
@@ -948,7 +916,11 @@ body._lock {
   position: relative;
 }
 .intro__mask {
+  display: block;
   overflow: hidden;
+}
+.intro__mask-text {
+  display: block;
 }
 .intro__subtitle {
   max-width: 1000px;
@@ -1163,15 +1135,11 @@ body._lock {
 }
 .item-gallery__image {
   display: block;
-  overflow: hidden;
   border-radius: 5.6px;
 }
 .item-gallery__image img {
   width: 100%;
   transition: transform 0.5s ease;
-}
-.item-gallery__image:hover img {
-  transform: scale(1.2);
 }
 .item-gallery__image:hover + .item-gallery__title {
   text-decoration: underline;
@@ -1237,6 +1205,59 @@ body._lock {
     box-shadow: 0px 0px 50px rgb(191, 2, 31);
   }
 }
+@media (any-hover: hover) {
+  .item-gallery__image {
+    overflow: hidden;
+  }
+  .item-gallery__image img {
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+  .item-gallery__image:hover img {
+    transform: scale(1.2);
+  }
+  .item-gallery__image:hover + .item-gallery__title {
+    text-decoration: underline;
+  }
+  .item-portfolio__image {
+    overflow: hidden;
+  }
+  .item-portfolio__image:hover img {
+    transform: scale(1.2);
+  }
+  .item-portfolio__image:hover + .item-portfolio__title {
+    text-decoration: underline;
+  }
+  .item-about__image {
+    overflow: hidden;
+    position: relative;
+  }
+  .item-about__image::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .item-about__image:hover img {
+    transform: scale(1.2);
+  }
+  .item-about__image:hover::after {
+    opacity: 1;
+  }
+  .item-about__image:hover .item-about__socials {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .item-about__image:hover + .item-about__info .item-about__title {
+    text-decoration: underline;
+  }
+}
 @media (max-height: 700px) {
   .hero__scroll {
     display: none;
@@ -1246,6 +1267,11 @@ body._lock {
   .hero {
     padding: 208px 0px 80px 0px;
     min-height: 100vh;
+  }
+}
+@media (min-width: 2200px) {
+  .hero__title {
+    font-size: 98px;
   }
 }
 @media (max-width: 1700px) {

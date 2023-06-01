@@ -68,7 +68,6 @@
 
 	&__image {
 		display: block;
-		overflow: hidden;
 
 		border-radius: 5.6px;
 
@@ -76,10 +75,6 @@
 			width: 100%;
 
 			transition: transform .5s ease;
-		}
-
-		&:hover img {
-			transform: scale(1.2);
 		}
 
 		&:hover+.item-gallery__title {
