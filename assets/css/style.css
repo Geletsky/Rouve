@@ -251,6 +251,7 @@ body._lock {
   left: 0;
   width: 100%;
   z-index: 50;
+  visibility: hidden;
 }
 .header._fixed {
   position: fixed;
@@ -370,6 +371,7 @@ body._lock {
 }
 .hero__container {
   display: flex;
+  visibility: hidden;
 }
 .hero__action {
   flex: 0 1 28%;
@@ -934,6 +936,7 @@ body._lock {
 .intro__container {
   display: flex;
   align-items: center;
+  visibility: hidden;
 }
 .intro__action {
   flex: 0 1 28%;
@@ -1243,17 +1246,6 @@ body._lock {
   .hero {
     padding: 208px 0px 80px 0px;
     min-height: 100vh;
-  }
-}
-@media (min-width: 992px) {
-  .header {
-    visibility: hidden;
-  }
-  .hero__container {
-    visibility: hidden;
-  }
-  .intro__container {
-    visibility: hidden;
   }
 }
 @media (max-width: 1700px) {

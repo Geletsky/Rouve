@@ -6,6 +6,8 @@
 	width: 100%;
 	z-index: 50;
 
+	visibility: hidden;
+
 	&._fixed {
 		position: fixed;
 		width: 100%;
@@ -162,6 +164,8 @@
 
 	&__container {
 		display: flex;
+
+		visibility: hidden;
 	}
 
 	&__action {

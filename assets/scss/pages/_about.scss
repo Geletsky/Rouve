@@ -6,6 +6,8 @@
 	&__container {
 		display: flex;
 		align-items: center;
+
+		visibility: hidden;
 	}
 
 	&__action {

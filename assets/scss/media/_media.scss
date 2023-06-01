@@ -21,20 +21,6 @@
 	}
 }
 
-@media (min-width: 992px) {
-	.header {
-		visibility: hidden;
-	}
-
-	.hero__container {
-		visibility: hidden;
-	}
-
-	.intro__container {
-		visibility: hidden;
-	}
-}
-
 @media (max-width: 1700px) {
 	.hero {
 		&__scroll {
