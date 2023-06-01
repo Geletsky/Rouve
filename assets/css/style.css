@@ -357,12 +357,12 @@ body._lock {
   background: var(--bg-color);
 }
 .hero__scroll {
-  display: block;
+  display: none;
   position: absolute;
   left: 50%;
   bottom: 4%;
   cursor: pointer;
-  animation: scrollDown 2s ease-in-out infinite;
+  animation: scrollDown 2s ease-in-out infinite 2s;
   transform: translateX(-50%);
 }
 .hero__scroll svg path, .hero__scroll svg rect {
@@ -383,7 +383,23 @@ body._lock {
   flex: 0 1 72%;
   position: relative;
 }
-.hero__content::after {
+.hero__title {
+  font-weight: 600;
+  font-size: calc(28px + 52 * ((100vw - 320px) / 1360));
+  line-height: 120%;
+  color: var(--text-color);
+}
+.hero__mask {
+  overflow: hidden;
+}
+.hero__subtitle {
+  margin: 40px 0px 0px 0px;
+  max-width: 680px;
+  font-size: 22px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+.hero__decor {
   position: absolute;
   content: "";
   top: 0;
@@ -392,19 +408,6 @@ body._lock {
   height: 100%;
   background: #BF021F;
   border-radius: 20px;
-}
-.hero__title {
-  font-weight: 600;
-  font-size: calc(28px + 52 * ((100vw - 320px) / 1360));
-  line-height: 120%;
-  color: var(--text-color);
-}
-.hero__subtitle {
-  margin: 40px 0px 0px 0px;
-  max-width: 680px;
-  font-size: 22px;
-  line-height: 150%;
-  color: var(--text-color);
 }
 
 /* ===================== */
@@ -875,15 +878,15 @@ body._lock {
 @keyframes scrollDown {
   0% {
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translateY(0);
   }
   50% {
     opacity: 0.5;
-    transform: translate(-50%, 10px);
+    transform: translateY(10px);
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translateY(0);
   }
 }
 @keyframes slide-arrow {
@@ -941,7 +944,13 @@ body._lock {
   flex: 0 1 72%;
   position: relative;
 }
-.intro__content::after {
+.intro__mask {
+  overflow: hidden;
+}
+.intro__subtitle {
+  max-width: 1000px;
+}
+.intro__decor {
   position: absolute;
   content: "";
   top: 0;
@@ -950,9 +959,6 @@ body._lock {
   height: 100%;
   background: #BF021F;
   border-radius: 20px;
-}
-.intro__subtitle {
-  max-width: 1000px;
 }
 
 .about-page {
@@ -1239,8 +1245,20 @@ body._lock {
     min-height: 100vh;
   }
 }
+@media (min-width: 992px) {
+  .header {
+    visibility: hidden;
+  }
+  .hero__container {
+    visibility: hidden;
+  }
+  .intro__container {
+    visibility: hidden;
+  }
+}
 @media (max-width: 1700px) {
   .hero__scroll {
+    display: block;
     left: 28.5%;
     transform: translateX(0%);
   }

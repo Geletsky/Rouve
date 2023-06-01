@@ -232,12 +232,11 @@ function magneticButtonAnimation() {
 magneticButtonAnimation()
 
 function goBack() {
-	const buttonBack = document.querySelector('.intro__button');
+	const buttonBack = document.querySelector('.button-back');
 
 	if (buttonBack) {
 		buttonBack.addEventListener('click', () => {
 			window.history.back()
-			console.log('отработала');
 		})
 	}
 }

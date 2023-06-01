@@ -21,29 +21,35 @@
 		flex: 0 1 72%;
 
 		position: relative;
-
-		&::after {
-			position: absolute;
-			content: '';
-			top: 0;
-			right: 0;
-			width: 4px;
-			height: 100%;
-
-			background: #BF021F;
-			border-radius: 20px;
-		}
 	}
 
 	&__title {}
 
+	&__mask {
+		overflow: hidden;
+	}
+
+	&__mask-text {}
+
 	&__subtitle {
 		max-width: 1000px;
+	}
+
+	&__decor {
+		position: absolute;
+		content: '';
+		top: 0;
+		right: 0;
+		width: 4px;
+		height: 100%;
+
+		background: #BF021F;
+		border-radius: 20px;
 	}
 }
 
 .about-page {
 	padding: 144px 0px 120px 0px;
-	
+
 	background: var(--bg-color-2);
 }

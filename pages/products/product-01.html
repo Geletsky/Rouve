@@ -71,7 +71,7 @@
 			<section class="intro">
 				<div class="intro__container">
 					<div class="intro__action">
-						<a href="#" class="intro__button button button-border" aria-label="Вернуться назад">
+						<a href="#" class="intro__button button button-border button-back" aria-label="Вернуться назад">
 							<span>
 								<svg width="57" height="27" viewBox="0 0 57 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<rect width="32.45" height="5.9" transform="matrix(-1 0 0 1 56.4597 10.834)" fill="white" />
@@ -83,11 +83,16 @@
 						</a>
 					</div>
 					<div class="intro__content">
-						<h1 class="intro__title title">«Paintworld»</h1>
+						<h1 class="intro__title title">
+							<div class="intro__mask">
+								<div class="intro__mask-text">«Paintworld»</div>
+							</div>
+						</h1>
 						<p class="intro__subtitle subtitle">Онлайн-магазин художественных картин<br><br>
 							Был разработан яркий дизайн сайта в стиле брендбука, передающий атмосферу бла-бла-бла. Для каждой
 							внутренней страницы
 							разработан синемаграф, акцентирующий внимание на основной информации</p>
+							<div class="intro__decor"></div>
 					</div>
 				</div>
 			</section>
@@ -191,6 +196,9 @@
 		</footer>
 	</div>
 	<script src="../../assets/js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+	<script src="../../assets/js/animations/product.js"></script>
 </body>
 
 </html>
