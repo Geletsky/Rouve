@@ -1,5 +1,5 @@
 <p align="center">
-<img src="assets\img\readme\logo.svg">
+  <img src="https://github.com/Geletsky/Rouve/blob/master/assets/img/readme/logo.svg" alt="Logo">
 </p>
 
 <p align="center">A digital company that creates unique websites and innovative solutions.</p>
@@ -38,12 +38,12 @@ The Rouve website offers various pages, each of which has its own functionality.
 The theme preference is stored in the browsers **'LocalStorage'**, ensuring that users chosen theme persist across sessions. This means that once a user selects either the light or dark theme, their preference will be remembered and applied whenever they visit the site.
 
 
-![Light Theme](assets\img\readme\screenshot-light.jpg)
+![Light Theme](https://github.com/Geletsky/Rouve/blob/master/assets/img/readme/screenshot-light.jpg)
 *The light theme provides a clean and bright color palette, offering a visually pleasing experience.*
 
 <br>
 
-![Dark Theme](assets\img\readme\screenshot-dark.jpg)
+![Dark Theme](https://github.com/Geletsky/Rouve/blob/master/assets/img/readme/screenshot-dark.jpg)
 *The dark theme creates a sleek and modern look, providing a visually striking experience.*
 
 ## Technologies Used:
