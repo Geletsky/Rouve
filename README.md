@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Geletsky/Rouve/blob/master/assets/img/readme/logo.svg" alt="Logo">
+  <img src="assets/img/readme/logo.jpg" alt="Logo">
 </p>
 
 <p align="center">A digital company that creates unique websites and innovative solutions.</p>
