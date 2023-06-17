@@ -60,7 +60,7 @@ The Rouve website has been developed using the following technologies:
 - **GSAP:** A powerful JavaScript animation library for creating smooth and dynamic animations.
 
 ## Demo:
-To explore the Rouve website, simply visit https://geletsky.github.io/Rouve/ in your web browser.
+To explore the Rouve website, simply visit [here](https://geletsky.github.io/Rouve/) in your web browser.
 
 ## Author
 Rouve was developed: https://github.com/Geletsky
