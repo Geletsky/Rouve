@@ -63,5 +63,5 @@ The Rouve website has been developed using the following technologies:
 To explore the Rouve website, simply visit [here](https://geletsky.github.io/Rouve/) in your web browser.
 
 ## Author
-Rouve was developed: https://github.com/Geletsky
+If you have any questions or suggestions regarding this project, feel free to contact the project owner: [here](https://github.com/Geletsky)
 
